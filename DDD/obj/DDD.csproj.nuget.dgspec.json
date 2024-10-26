@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\DDD.csproj": {}
+    "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/DDD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\DDD.csproj": {
+    "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/DDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\DDD.csproj",
+        "projectUniqueName": "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/DDD.csproj",
         "projectName": "DDD",
-        "projectPath": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\DDD.csproj",
-        "packagesPath": "C:\\Users\\Cassidy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\obj\\",
+        "projectPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/DDD.csproj",
+        "packagesPath": "/Users/gabrielleking/.nuget/packages/",
+        "outputPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cassidy\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/gabrielleking/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.7, )"
+            },
+            "MySqlConnector.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.3.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,5 +1,11 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "dTA16p+mAPo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\DDD\\DDD.csproj",
+  "expectedPackageFiles": [],
+=======
   "dgSpecHash": "/zAk+OkjKyc=",
   "success": true,
   "projectFilePath": "/Users/gabrielleking/The-Devils-Dice-Tavern/DDD/DDD.csproj",
@@ -9,5 +15,6 @@
     "/Users/gabrielleking/.nuget/packages/mysqlconnector/2.3.7/mysqlconnector.2.3.7.nupkg.sha512",
     "/Users/gabrielleking/.nuget/packages/mysqlconnector.dependencyinjection/2.3.6/mysqlconnector.dependencyinjection.2.3.6.nupkg.sha512"
   ],
+>>>>>>> dev
   "logs": []
 }

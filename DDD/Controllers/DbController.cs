@@ -28,6 +28,6 @@ namespace DbConnection {
             get { return isConnected; }
             set { isConnected = new MySqlConnection(value); }
         }
-        
+
     }
 }

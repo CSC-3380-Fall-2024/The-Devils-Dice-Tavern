@@ -180,44 +180,6 @@
   </div>
 
 
-
-
-        <script>
-          function updateProgressBar() {
-          const currentDate = new Date();
-          const currentYear = currentDate.getFullYear();
-          const birthdayThisYear = new Date(currentYear, 2, 11); // March 11th of the current year
-          const nextBirthday = new Date(currentYear + 1, 2, 11); // March 11th of the next year
-
-          let startDate, endDate;
-  
-          if (currentDate >= birthdayThisYear) {
-           startDate = birthdayThisYear;
-           endDate = nextBirthday;
-          } else {
-           startDate = new Date(currentYear - 1, 2, 11); // March 11th of the previous year
-           endDate = birthdayThisYear;
-          }
-
-          const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
-          const daysPassed = (currentDate - startDate) / (1000 * 60 * 60 * 24);
-          const daysRemaining = Math.ceil(totalDays - daysPassed);
-          const progressPercentage = Math.min(100, (daysPassed / totalDays) * 100);
-
-          const progressBar = document.getElementById('progressBar');
-
-          progressBar.textContent = Math.round(progressPercentage) + '%';
-          progressBar.value = progressPercentage;
-          
-          const daysRemainingText = document.getElementById('daysRemaining');
-          daysRemainingText.textContent = daysRemaining + " days till my birthday.";
-
-          }
-
-        // Run the function to update the progress bar and days remaining text
-        updateProgressBar();
-      </script>
-
     
   </body>
 </html>

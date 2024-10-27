@@ -2,10 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-<<<<<<< HEAD
-=======
 builder.Services.AddMySqlDataSource(builder.Configuration.GetConnectionString("Default")!);
->>>>>>> dev
 
 var app = builder.Build();
 

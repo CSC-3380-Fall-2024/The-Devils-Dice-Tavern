@@ -226,19 +226,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/gabrielleking/.nuget/packages/": {}
+    "C:\\Users\\Cassidy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/Dice_Tavern.csproj",
+      "projectUniqueName": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\Dice_Tavern\\Dice_Tavern.csproj",
       "projectName": "Dice_Tavern",
-      "projectPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/Dice_Tavern.csproj",
-      "packagesPath": "/Users/gabrielleking/.nuget/packages/",
-      "outputPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/obj/",
+      "projectPath": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\Dice_Tavern\\Dice_Tavern.csproj",
+      "packagesPath": "C:\\Users\\Cassidy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cassidy\\VsCode\\The-Devils-Dice-Tavern\\Dice_Tavern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/gabrielleking/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Cassidy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -295,7 +295,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

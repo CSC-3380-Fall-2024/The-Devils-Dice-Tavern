@@ -2,6 +2,10 @@
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.under-nav[b-f9rychlxln] {
+  padding-top: 500px;
+}
+
 a.navbar-brand[b-f9rychlxln] {
   white-space: normal;
   text-align: center;
@@ -47,3 +51,47 @@ button.accept-policy[b-f9rychlxln] {
   white-space: nowrap;
   line-height: 60px;
 }
+.navbar[b-f9rychlxln] {
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: #246153;
+}
+.navbar ul[b-f9rychlxln] {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.navbar li[b-f9rychlxln] {
+  float: left;
+  margin: 0.5em .5em;
+  font: 2em "Baskerville", sans-serif;
+  position: relative;
+  background-color: #246153;
+}
+
+.navbar li:last-child[b-f9rychlxln] {
+  float: right;
+}
+
+/* .navbar {
+  clear: both;
+  display: block;
+  width: 100%;
+  position: fixed;
+  background-color: #246153;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  padding-left: 0;
+}
+.navbar li {
+  float: left;
+  margin: 0.5em .5em;
+  position: fixed;
+  font: 2em "Baskerville", sans-serif;
+  position: relative;
+  background-color: #246153;
+} */

@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/wwwroot/images/guest.png",
+      "PackagePath": "staticwebassets/images/guest.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/wwwroot/images/weblogo.png",
+      "PackagePath": "staticwebassets/images/weblogo.png"
+    },
+    {
       "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

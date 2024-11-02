@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

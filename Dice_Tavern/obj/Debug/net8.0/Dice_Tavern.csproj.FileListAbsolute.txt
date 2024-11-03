@@ -33,3 +33,15 @@
 /Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/obj/Debug/net8.0/Dice_Tavern.pdb
 /Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/obj/Debug/net8.0/Dice_Tavern.genruntimeconfig.cache
 /Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/obj/Debug/net8.0/ref/Dice_Tavern.dll
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.csproj.AssemblyReference.cache
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.AssemblyInfoInputs.cache
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.AssemblyInfo.cs
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.csproj.CoreCompileInputs.cache
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.RazorAssemblyInfo.cache
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.RazorAssemblyInfo.cs
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.sourcelink.json
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.dll
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\refint\Dice_Tavern.dll
+C:\Users\Cassidy\VsCode\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.pdb

@@ -13,6 +13,12 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    /*ADD LIKE THIS*/
+    public IActionResult MainPage()
+    {
+        return View();
+    }
+
     public IActionResult Index()
     {
         return View();

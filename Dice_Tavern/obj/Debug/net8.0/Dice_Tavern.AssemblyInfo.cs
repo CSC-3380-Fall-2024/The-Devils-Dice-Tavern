@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dice_Tavern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28e040a74c28ec19f0b966c1364b60416c076824")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1611d196edffb00dc744dd4453e4a68f6883ba2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dice_Tavern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dice_Tavern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

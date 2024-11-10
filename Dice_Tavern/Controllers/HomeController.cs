@@ -19,6 +19,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Signup()
+    {
+        return View();
+    }
+
     public IActionResult Index()
     {
         return View();

@@ -24,6 +24,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Newsletter()
+    {
+        return View();
+    }
+
     public IActionResult Index()
     {
         return View();

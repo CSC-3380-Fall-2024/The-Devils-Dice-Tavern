@@ -13,6 +13,22 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    /*ADD LIKE THIS*/
+    public IActionResult MainPage()
+    {
+        return View();
+    }
+
+    public IActionResult Signup()
+    {
+        return View();
+    }
+
+    public IActionResult Newsletter()
+    {
+        return View();
+    }
+
     public IActionResult Index()
     {
         return View();
@@ -23,6 +39,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Newsletter()
+    {
+        return View();
+    }
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

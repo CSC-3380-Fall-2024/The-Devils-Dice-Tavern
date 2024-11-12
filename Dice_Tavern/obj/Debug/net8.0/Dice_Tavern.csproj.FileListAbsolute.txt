@@ -80,3 +80,15 @@ C:\Users\kmave\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\ref
 C:\Users\kmave\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.pdb
 C:\Users\kmave\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.genruntimeconfig.cache
 C:\Users\kmave\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\ref\Dice_Tavern.dll
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.csproj.AssemblyReference.cache
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.AssemblyInfoInputs.cache
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.AssemblyInfo.cs
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.csproj.CoreCompileInputs.cache
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.RazorAssemblyInfo.cache
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.RazorAssemblyInfo.cs
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.sourcelink.json
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.dll
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\refint\Dice_Tavern.dll
+C:\Users\kgabs\OneDrive\Documents\The-Devils-Dice-Tavern\Dice_Tavern\obj\Debug\net8.0\Dice_Tavern.pdb

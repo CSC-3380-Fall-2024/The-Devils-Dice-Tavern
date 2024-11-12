@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YUsnMgwU7W4=",
+  "dgSpecHash": "/7H2By2IEMk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Dice_Tavern\\Dice_Tavern.csproj",
+  "projectFilePath": "/Users/gabrielleking/The-Devils-Dice-Tavern/Dice_Tavern/Dice_Tavern.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kgabs\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\kgabs\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
-    "C:\\Users\\kgabs\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512",
-    "C:\\Users\\kgabs\\.nuget\\packages\\mysqlconnector.dependencyinjection\\2.3.6\\mysqlconnector.dependencyinjection.2.3.6.nupkg.sha512"
+    "/Users/gabrielleking/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/gabrielleking/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/gabrielleking/.nuget/packages/mysqlconnector/2.3.7/mysqlconnector.2.3.7.nupkg.sha512",
+    "/Users/gabrielleking/.nuget/packages/mysqlconnector.dependencyinjection/2.3.6/mysqlconnector.dependencyinjection.2.3.6.nupkg.sha512"
   ],
   "logs": []
 }

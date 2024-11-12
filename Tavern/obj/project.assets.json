@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kgabs\\.nuget\\packages\\": {}
+    "/Users/gabrielleking/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Dice_Tavern\\Tavern\\Tavern.csproj",
+      "projectUniqueName": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/Tavern.csproj",
       "projectName": "Tavern",
-      "projectPath": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Dice_Tavern\\Tavern\\Tavern.csproj",
-      "packagesPath": "C:\\Users\\kgabs\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Dice_Tavern\\Tavern\\obj\\",
+      "projectPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/Tavern.csproj",
+      "packagesPath": "/Users/gabrielleking/.nuget/packages/",
+      "outputPath": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kgabs\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/gabrielleking/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

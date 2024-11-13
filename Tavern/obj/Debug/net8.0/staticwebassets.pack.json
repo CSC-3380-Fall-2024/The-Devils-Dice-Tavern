@@ -21,6 +21,138 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (1).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (1).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (2).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (2).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (3).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (3).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (4).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (4).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (5).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (5).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (6).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (6).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (7).png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector (7).png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector.png",
+      "PackagePath": "staticwebassets/imgs/Scrolls/Vector.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/aboutus_background.jpg",
+      "PackagePath": "staticwebassets/imgs/aboutus_background.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/blank_profile.jpg",
+      "PackagePath": "staticwebassets/imgs/blank_profile.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/campaign_manager_background.jpg",
+      "PackagePath": "staticwebassets/imgs/campaign_manager_background.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/ceylonX.png",
+      "PackagePath": "staticwebassets/imgs/ceylonX.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/cyberX.png",
+      "PackagePath": "staticwebassets/imgs/cyberX.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/imaginX.png",
+      "PackagePath": "staticwebassets/imgs/imaginX.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/jane_doe.jpg",
+      "PackagePath": "staticwebassets/imgs/jane_doe.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/kodeX.png",
+      "PackagePath": "staticwebassets/imgs/kodeX.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/logo.png",
+      "PackagePath": "staticwebassets/imgs/logo.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mail_letter.png",
+      "PackagePath": "staticwebassets/imgs/mail_letter.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage1.png",
+      "PackagePath": "staticwebassets/imgs/mainimage1.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage2.png",
+      "PackagePath": "staticwebassets/imgs/mainimage2.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage3.png",
+      "PackagePath": "staticwebassets/imgs/mainimage3.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainpage_footer.png",
+      "PackagePath": "staticwebassets/imgs/mainpage_footer.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member1.jpg",
+      "PackagePath": "staticwebassets/imgs/member1.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member2.jpg",
+      "PackagePath": "staticwebassets/imgs/member2.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member3.jpg",
+      "PackagePath": "staticwebassets/imgs/member3.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/newsletter_background.png",
+      "PackagePath": "staticwebassets/imgs/newsletter_background.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/potion_bottle.png",
+      "PackagePath": "staticwebassets/imgs/potion_bottle.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/signup_background.png",
+      "PackagePath": "staticwebassets/imgs/signup_background.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/textbox_background.jpg",
+      "PackagePath": "staticwebassets/imgs/textbox_background.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/univ.jpg",
+      "PackagePath": "staticwebassets/imgs/univ.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/weblogo.png",
+      "PackagePath": "staticwebassets/imgs/weblogo.png"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/who_are_we.jpg",
+      "PackagePath": "staticwebassets/imgs/who_are_we.jpg"
+    },
+    {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/zeuX.png",
+      "PackagePath": "staticwebassets/imgs/zeuX.png"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Tavern.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

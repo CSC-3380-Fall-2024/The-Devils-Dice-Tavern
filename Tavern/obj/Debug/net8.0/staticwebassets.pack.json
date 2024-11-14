@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets/imgs/potion_bottle.png"
     },
     {
+      "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/resizetest.png",
+      "PackagePath": "staticwebassets/imgs/resizetest.png"
+    },
+    {
       "Id": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/signup_background.png",
       "PackagePath": "staticwebassets/imgs/signup_background.png"
     },

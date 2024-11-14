@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SLOfN1zFw2u3z2RyJi1I6nxzVOCqRvCcAl32H35+0X0=",
+  "Hash": "YcbLLGSq1YcAQRh8CoB4uDXoa7X5JNrYtFx/v2wAfBs=",
   "Source": "Tavern",
   "BasePath": "_content/Tavern",
   "Mode": "Default",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/imgs/potion_bottle.png"
+    },
+    {
+      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/resizetest.png",
+      "SourceId": "Tavern",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "BasePath": "_content/Tavern",
+      "RelativePath": "imgs/resizetest.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/imgs/resizetest.png"
     },
     {
       "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (1).png",

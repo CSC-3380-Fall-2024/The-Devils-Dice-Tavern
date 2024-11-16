@@ -2,11 +2,6 @@
 
 <PageTitle>Login</PageTitle>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devil's Dice Tavern - Login</title>
     <style>
         * {
@@ -24,7 +19,9 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            height: 100%;
             justify-content: center;
+            place-items: center;
         }
         .login-container {
             background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/textbox_background.jpg"); 
@@ -37,6 +34,8 @@
             text-align: center;
             color: #5c4033;
             font-family: Baskerville;
+            display: grid
+            
         }
         .login-container h2 {
             font-size: 24px;
@@ -68,8 +67,8 @@
         }
     </style>
 
-</head>
 <body>
+    
     <div class="login-container">
         
         <h2>Login</h2>
@@ -89,4 +88,3 @@
         </form>
     </div>
 </body>
-</html>

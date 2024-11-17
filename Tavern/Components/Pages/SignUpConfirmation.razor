@@ -1,94 +1,85 @@
 @page "/SignUpConfirmation"
+@inject NavigationManager NavigationManager
 
-<PageTitle>SignUpConfirmation</PageTitle>
+<PageTitle>SignUp Confirmation</PageTitle>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devil's Dice Tavern - Confirmation</title>
-    <style>
-        /* Reset and page setup */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/signup_background.png");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            justify-content: center;
-        }
+<div class="confirmation-container">
+    <h2>Thank You for Signing Up!</h2>
+    <p>Your account has been successfully created.</p>
+    <p>Welcome to the Devil's Dice Tavern! You can now start exploring our world.</p>
+    
+    <!-- Blazor Navigation Buttons -->
+    <button @onclick="NavigateToLogin">Log In</button>
+    <button @onclick="NavigateToHome">Return to Home</button>
+</div>
 
-        /* Confirmation container styled like a scroll */
-        .confirmation-container {
-            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/textbox_background.jpg");
-            background-size: cover;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-            width: 450px;
-            text-align: center;
-            color: #5c4033;
-            font-family: 'Times New Roman', Times, serif;
-        }
+<style>
+    /* Reset and page setup */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/signup_background.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+    }
 
-        .confirmation-container h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
+    .confirmation-container {
+        background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/textbox_background.jpg");
+        background-size: cover;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        width: 450px;
+        text-align: center;
+        color: #5c4033;
+        font-family: 'Times New Roman', Times, serif;
+    }
 
-        .confirmation-container p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
+    .confirmation-container h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 
-        .confirmation-container button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            margin: 5px;
-        }
+    .confirmation-container p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 
-        .confirmation-container button:hover {
-            background-color: #555;
-        }
+    .confirmation-container button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 5px;
+    }
 
-        .confirmation-container .button-link {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+    .confirmation-container button:hover {
+        background-color: #555;
+    }
+</style>
 
-    <!-- Confirmation Message -->
-    <div class="confirmation-container">
-        <h2>Thank You for Signing Up!</h2>
-        <p>Your account has been successfully created.</p>
-        <p>Welcome to the Devil's Dice Tavern! You can now start exploring our world.</p>
-        
-        <!-- Button to navigate to other pages -->
-        <button>
-            <a href="login.html" class="button-link">Log In</a>
-        </button>
-        <button>
-            <a href="index.html" class="button-link">Return to Home</a>
-        </button>
-    </div>
+@code {
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
 
-</body>
-</html>
+    private void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

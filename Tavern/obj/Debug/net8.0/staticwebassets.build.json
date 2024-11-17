@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SLOfN1zFw2u3z2RyJi1I6nxzVOCqRvCcAl32H35+0X0=",
+  "Hash": "37Ri91igYQcvo7SOqCFksrH1tL8X5llJk4ZazAFaFHI=",
   "Source": "Tavern",
   "BasePath": "_content/Tavern",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Tavern/wwwroot",
+      "Name": "Tavern\\wwwroot",
       "Source": "Tavern",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/bundle/Tavern.styles.css",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tavern.styles.css",
       "SourceId": "Tavern",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "Tavern.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/bundle/Tavern.styles.css"
+      "OriginalItemSpec": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tavern.styles.css"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/projectbundle/Tavern.bundle.scp.css",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tavern.bundle.scp.css",
       "SourceId": "Tavern",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "Tavern.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/obj/Debug/net8.0/scopedcss/projectbundle/Tavern.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tavern.bundle.scp.css"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/app.css",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\app.css",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/favicon.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\favicon.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/aboutus_background.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\aboutus_background.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/aboutus_background.jpg",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/aboutus_background.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\aboutus_background.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/blank_profile.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\blank_profile.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/blank_profile.jpg",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/blank_profile.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\blank_profile.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/campaign_manager_background.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\campaign_manager_background.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/campaign_manager_background.jpg",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/campaign_manager_background.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\campaign_manager_background.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/ceylonX.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\ceylonX.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/ceylonX.png",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/ceylonX.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\ceylonX.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/cyberX.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\cyberX.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/cyberX.png",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/cyberX.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\cyberX.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/imaginX.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\imaginX.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/imaginX.png",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/imaginX.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\imaginX.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/jane_doe.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\jane_doe.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/jane_doe.jpg",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/jane_doe.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\jane_doe.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/kodeX.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\kodeX.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/kodeX.png",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/kodeX.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\kodeX.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/logo.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\logo.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/logo.png",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/logo.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\logo.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mail_letter.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\mail_letter.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/mail_letter.png",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/mail_letter.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\mail_letter.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage1.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\mainimage1.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/mainimage1.png",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/mainimage1.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\mainimage1.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage2.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\mainimage2.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/mainimage2.png",
       "AssetKind": "All",
@@ -356,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/mainimage2.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\mainimage2.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainimage3.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\mainimage3.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/mainimage3.png",
       "AssetKind": "All",
@@ -375,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/mainimage3.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\mainimage3.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/mainpage_footer.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\mainpage_footer.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/mainpage_footer.png",
       "AssetKind": "All",
@@ -394,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/mainpage_footer.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\mainpage_footer.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member1.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\member1.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/member1.jpg",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/member1.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\member1.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member2.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\member2.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/member2.jpg",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/member2.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\member2.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/member3.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\member3.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/member3.jpg",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/member3.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\member3.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/newsletter_background.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\newsletter_background.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/newsletter_background.png",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/newsletter_background.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\newsletter_background.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/potion_bottle.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\potion_bottle.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/potion_bottle.png",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/potion_bottle.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\potion_bottle.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (1).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (1).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (1).png",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (1).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (1).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (2).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (2).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (2).png",
       "AssetKind": "All",
@@ -527,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (2).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (2).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (3).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (3).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (3).png",
       "AssetKind": "All",
@@ -546,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (3).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (3).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (4).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (4).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (4).png",
       "AssetKind": "All",
@@ -565,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (4).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (4).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (5).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (5).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (5).png",
       "AssetKind": "All",
@@ -584,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (5).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (5).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (6).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (6).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (6).png",
       "AssetKind": "All",
@@ -603,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (6).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (6).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector (7).png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector (7).png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector (7).png",
       "AssetKind": "All",
@@ -622,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector (7).png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector (7).png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/Scrolls/Vector.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\Scrolls\\Vector.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/Scrolls/Vector.png",
       "AssetKind": "All",
@@ -641,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/Scrolls/Vector.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\Scrolls\\Vector.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/signup_background.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\signup_background.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/signup_background.png",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/signup_background.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\signup_background.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/textbox_background.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\textbox_background.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/textbox_background.jpg",
       "AssetKind": "All",
@@ -679,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/textbox_background.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\textbox_background.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/univ.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\univ.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/univ.jpg",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/univ.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\univ.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/weblogo.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\weblogo.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/weblogo.png",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/weblogo.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\weblogo.png"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/who_are_we.jpg",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\who_are_we.jpg",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/who_are_we.jpg",
       "AssetKind": "All",
@@ -736,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/who_are_we.jpg"
+      "OriginalItemSpec": "wwwroot\\imgs\\who_are_we.jpg"
     },
     {
-      "Identity": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/imgs/zeuX.png",
+      "Identity": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\imgs\\zeuX.png",
       "SourceId": "Tavern",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/gabrielleking/The-Devils-Dice-Tavern/Tavern/wwwroot/",
+      "ContentRoot": "C:\\Users\\kgabs\\OneDrive\\Documents\\The-Devils-Dice-Tavern\\Tavern\\wwwroot\\",
       "BasePath": "_content/Tavern",
       "RelativePath": "imgs/zeuX.png",
       "AssetKind": "All",
@@ -755,7 +755,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/imgs/zeuX.png"
+      "OriginalItemSpec": "wwwroot\\imgs\\zeuX.png"
     }
   ]
 }

@@ -1,8 +1,8 @@
 @page "/SignUp"
+@inject NavigationManager NavigationManager
 
 <PageTitle>SignUp</PageTitle>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -185,28 +185,29 @@
              <div class="dropdown-container">
                 <label for="role">Select Role</label>
                 <select id="role" name="role" required>
-                    <option value="">Select
-                        
-                    </option>
+                    <option value="">Select</option>
                     <option value="DND Player">DND Player</option>
                     <option value="Dungeon Master">Dungeon Master</option>
                 </select>
             </div>
 
-            <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
             <p>
                 <a href="login" class="login-link">Already have an account? Log In</a>
             </p>
         </form>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Socials</a>
-    </div>
+
+        @code {
+            
+        private void HandleSubmit()
+        {
+        
+            // Redirect to the SignUpConfirmation page
+            NavigationManager.NavigateTo("/SignUpConfirmation");
+        }
+    }
 
 </body>
 </html>

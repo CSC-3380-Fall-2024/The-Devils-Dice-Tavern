@@ -1,0 +1,267 @@
+@page "/Campaign"
+
+<PageTitle>Campaign Manager</PageTitle>
+
+<div class="mainheader">
+    <div class="mainheader-text">
+        <h1 style="font-size: 128px;">Campaign Mananger</h1>
+    </div>
+</div>
+<div class="mainbody">
+    <div class="mainbody-container">
+        <div class="mainbody-text">
+            <h1 style="font-size: 40px; padding-bottom: 35px;">My Campaigns</h1>
+            <div class="line"></div>
+            <p style="word-wrap: break-word; font-size: 25px; padding-top: 20px;">Active Campaigns</p>
+            <p style="word-wrap: break-word; font-size: 25px;">Your active campaigns are open to new players joining, and take up campaign sharing slots if used within the campaign.</p>
+        </div>
+    </div>
+
+    <div class="campaign-container">
+        <div class="campaign-item">
+            <img src="imgs/Scrolls/Vector (4).png" alt="Scroll">
+            <div class="text-overlay">
+                <h1>Tharizdun’s Awakening</h1>
+                <p>Campaign Started: 6/29/2024</p>
+                <h2>5</h2>
+                <p style="padding-bottom: 50px;">Players</p>
+                <p>Role: Player</p>
+                <p>DM: Username</p>
+                <div class="campaignline"></div>
+                <a href="#viewcampaign" class="action-link">View Campaign</a>
+            </div>
+
+            <div class="small-images-row">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 1">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 2">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 3">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 4">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 5">
+            </div>
+
+        </div>
+
+        <div class="campaign-item">
+            <img src="imgs/Scrolls/Vector (7).png" alt="Scroll">
+            <div class="text-overlay">
+                <h1>Curse of Strahd</h1>
+                <p>Campaign Started: 6/29/2024</p>
+                <h2>4</h2>
+                <p style="padding-bottom: 50px;">Players</p>
+                <p>Role: Dungeon Master</p>
+                <div class="campaignline"></div>
+                <a href="#viewcampaign" class="action-link">View Campaign</a>
+                <a href="#deactivate" class="action-link">Deactivate</a>
+                <a href="#delete" class="action-link">Delete</a>
+                
+            </div>
+
+            <div class="small-images-row">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 1">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 2">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 3">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 4">
+            </div>
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    
+    <div class="mainbody-container">
+        <div class="mainbody-text">
+            <div class="line" style="background-color:#00000000 "></div>
+            <p style="word-wrap: break-word; font-size: 25px; padding-top: 20px;">Deactived Campaigns</p>
+            <p style="word-wrap: break-word; font-size: 25px;">Your inactive campaigns are closed to new players joining.</p>
+        </div>
+    </div>
+
+    <div class="campaign-container">
+        <div class="campaign-item">
+            <img src="imgs/Scrolls/Vector (7).png" alt="Scroll">
+            <div class="text-overlay">
+                <h1>Curse of Strahd</h1>
+                <p>Campaign Started: 6/29/2024</p>
+                <h2>3</h2>
+                <p style="padding-bottom: 50px;">Players</p>
+                <p>Role: Dungeon Master</p>
+                <div class="campaignline"></div>
+                <a href="#activate" class="action-link">Activate</a>
+                <a href="#delete" class="action-link">Delete</a>
+                
+            </div>
+
+            <div class="small-images-row">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 1">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 2">
+                <img src="/imgs/blank_profile.jpg" alt="Small Image 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+   html, body {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .mainheader {
+        width: 100%;
+        height: 755px;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.2), rgba(20, 20, 17, 1)), url("/imgs/campaign_manager_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  /* Center the background image */
+        display: flex;                 /* Enable flexbox */
+        justify-content: center;       /* Center horizontally */
+        align-items: center;           /* Center vertically */
+    }
+
+    .mainheader-text {
+        text-align: center;
+        color: white;
+        font-family: '';
+        padding-bottom: 100px;
+    }
+
+    .mainbody {
+        position: relative;
+         /* Apply the background image and create a gradient overlay */
+        background-image: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.45)), url("/imgs/jane_doe.jpg");
+        /* Make sure the background covers the entire viewport */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 300px; 
+    }
+
+    .mainbody-container {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+        padding: 50px;
+        padding-bottom: 50px;
+    }
+
+    .mainbody-text {
+        text-align: left;
+        color: white;
+        padding-left: 100px;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 1); /* Adding a shadow to the text */
+        line-height: 260%;
+    }
+
+    .line {
+        width: 1920px;
+        height: 3px;
+        background-color: #ffffff69;  /* White color */
+        opacity: 1;  /* Ensure full opacity */
+        z-index: 5;  /* Ensure it stays on top of other content */
+    }
+
+    /* Container for campaign images */
+    .campaign-container {
+        display: flex;  /* Use Flexbox to align items horizontally */
+        justify-content: flex-start;  /* Distribute the items with space in between */
+        gap: 80px;  /* Gap between items */
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* Each individual campaign item */
+    .campaign-item {
+        position: relative;  /* Allows positioning of the overlay on the image */
+        width: 30%;  /* Adjust width to your liking (e.g., 30% for 3 items per row) */
+        overflow: show;  /* Hide anything that overflows the container */
+        text-shadow: 0px 0px 4px rgb(36, 5, 5, 1);
+    }
+
+    /* Style for images */
+    .campaign-item img {
+        width: 100%;  /* Make the image take up 100% of the container's width */
+        height: auto;  /* Maintain aspect ratio */
+        display: block;  /* Remove any space below the image */
+    }
+
+    /* The overlay container */
+    .text-overlay {
+        position: absolute;  /* Position the overlay on top of the image */
+        top: 50%;  /* Center vertically */
+        left: 50%;  /* Center horizontally */
+        transform: translate(-50%, -50%);  /* Adjust for exact centering */
+        color: #612B24;  /* Text color */
+        background: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for text readability */
+        padding: 10px;
+        text-align: center;
+        width: 90%;  /* Adjust width of the overlay container */
+        border-radius: 10px;
+    }
+
+    .text-overlay h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .text-overlay p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .small-images-row {
+        position: absolute;  /* Position the row of small images */
+        top: -25px;  /* Adjust to place the row half on top of the main image */
+        left: 50%;  /* Center the row horizontally */
+        transform: translateX(-50%);  /* Exact centering */
+        display: flex;  /* Align images in a row */
+        gap: 10px;  /* Space between small images */
+        z-index: 10;  /* Ensure the row of small images appears on top of the main image */
+    }
+
+    /* Style for the small images */
+    .small-images-row img {
+        width: 50px;  /* Set the size of the small images */
+        height: 50px;
+        object-fit: cover;  /* Make the images cover their container and maintain aspect ratio */
+        border-radius: 5px;  /* Optional: rounded corners for small images */
+        border-color: #000000;
+        border: 2px solid black;
+    }
+
+    .campaignline {
+        width: 100%;
+        height: 3px;
+        background-color: #000000;  /* White color */
+        opacity: 1;  /* Ensure full opacity */
+        z-index: 5;  /* Ensure it stays on top of other content */
+    }
+
+    .action-link {
+        text-decoration: none;  /* Remove underline from links */
+        color: #612B24;  /* Color of the links (you can change this to any color you prefer) */
+        font-weight: bold;  /* Make the text bold */
+        font-size: 18px;  /* Adjust the font size */
+        padding: 20px;  /* Add some padding for a button-like look */  /* Add border around the link */
+        border-radius: 5px;  /* Rounded corners */
+        transition: all 0.3s ease;  /* Smooth transition effect */
+    }
+
+    .action-link:hover {
+        color: white;  /* Change text color on hover */
+        cursor: pointer;  /* Change cursor to pointer */
+    }
+
+    .action-link:active {
+        background-color: #0056b3;  /* Darken the background on click */
+    }
+
+</style>

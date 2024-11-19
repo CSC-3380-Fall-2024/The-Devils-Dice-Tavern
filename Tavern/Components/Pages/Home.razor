@@ -2,10 +2,163 @@
 
 <PageTitle>Home</PageTitle>
 
-<div class="main-header">
-    <h1>Welcome in....</h1>
-    <p style="word-wrap: break-word">As you enter the Devil's Dice Tavern, you will step into your fantasy, geared to meet your every DnD need. 
-        <br/>With our whimsical features and knickknacks galore, the possibilities are endless. 
-        <br/>All yee Dungeon Masters and Players alike will leave content and astonished.
+<div class="mainheader">
+    <div class="mainheader-text">
+        <h1 style="font-size: 64px; padding-top: 70px;">Welcome in....</h1>
+        <p style="word-wrap: break-word; font-size: 32px; padding-top: 120px; padding-bottom: 150px;">As you enter the Devil's Dice Tavern, you will step into your fantasy, geared to meet your every DnD need.
+            <br/>With our whimsical features and knickknacks galore, the possibilities are endless. 
+            <br/>All yee Dungeon Masters and Players alike will leave content and astonished.
         </p>
+    </div>
 </div>
+<div class="mainbody">
+    <div class="mainbody-container">
+        <div class="mainbody-text">
+            <h1 style="font-size: 40px;">Online Shop</h1>
+            <p style="word-wrap: break-word; font-size: 20px;"> We have everything you need for your Dungeons and Dragons adventures! From an extensive selection of miniatures and colorful dice to detailed battle maps, our supplies will enhance your gameplay and bring your campaigns to life. Whether you're setting the scene for epic battles or crafting intricate stories, you'll find all the essentials right here to fuel your imagination and elevate your sessions!</p>
+            <button type="shop">Shop Now!</button>
+        </div>
+        <div>
+            <img class="first-img"src="/imgs/mainimage2.png" alt="Text"/>
+        </div>
+    </div>
+    <div class="mainbody-container">
+        <div>
+            <img class="second-img"src="/imgs/mainimage3.png" alt="Text"/>
+        </div>
+        <div class="mainbody-text">
+            <h1 style="font-size: 40px;">Campaigns</h1>
+            <p style="word-wrap: break-word; font-size: 20px;"> Managing your D&D campaigns on this website can greatly enhance your organization and storytelling. You can easily keep track of character sheets, session notes, and world-building elements all in one place. The intuitive interface allows you to create and categorize adventures, NPCs, and lore, making it simple to find what you need during sessions.</p>
+            <button type="signup">Manage Now!</button>
+        </div>
+    </div>
+</div>
+<div class="mainfooter">
+    <div class="mainfooter-text">
+        <div class="icon-placement">
+            <img class="icon"src="/imgs/emailicon.png" alt="Text"/>
+        </div>
+        <div class="mainfooter-text-placement">
+            <h2 style="word-wrap: break-word; font-size: 40px;">Subscribe to the newsletter and stay connected with our community</h2>
+            <div class="mainfooter-button-placement">
+                <button type="newsletter" class="mainfooter-button">Stay Connected!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mainheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.50), rgba(20, 20, 17, 0.50)), url("/imgs/mainimage1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .mainheader-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville;
+    }
+
+    .mainbody {
+        position: relative; 
+        background-image: linear-gradient(0deg, #505050 0%, #505050 100%), 
+                    radial-gradient(100.00% 100.00%, rgba(0, 0, 0, 0) 67%,
+                    rgba(0, 0, 0, 0.15) 100%), url("/imgs/jane_doe.jpg");
+    }
+
+    .mainbody-container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .mainbody-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .first-img {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 100px;
+        max-width: 800px;
+        max-height: 600px;
+    }
+    
+    .second-img {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        max-width: 800px;
+        max-height: 600px;
+    }
+
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+     .mainfooter {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.50), rgba(20, 20, 17, 0.50)), url("/imgs/mainpagefooter.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .mainfooter-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville;
+    }
+
+    .icon {
+        width: 150px;
+        height: 150px;
+        align: center;
+    }
+
+    .icon-placement {
+        padding-top: 40px;
+    }
+
+    .mainfooter-text-placement {
+        padding-top: 50px;
+    }
+
+    .mainfooter-button {
+        width: 250px;
+        height: 80px;
+        font-size: 30px;
+        align: center;
+        
+    }
+
+    .mainfooter-button-placement {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+</style>

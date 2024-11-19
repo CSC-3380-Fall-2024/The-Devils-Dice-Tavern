@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavern", "Tavern\Tavern.csproj", "{2FD8564A-DFD7-4AAA-9630-ADDEC063B1C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavern", "Tavern\Tavern.csproj", "{F86D3456-1C80-40E7-B41F-76C0CFC2F3D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2FD8564A-DFD7-4AAA-9630-ADDEC063B1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FD8564A-DFD7-4AAA-9630-ADDEC063B1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FD8564A-DFD7-4AAA-9630-ADDEC063B1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FD8564A-DFD7-4AAA-9630-ADDEC063B1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86D3456-1C80-40E7-B41F-76C0CFC2F3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86D3456-1C80-40E7-B41F-76C0CFC2F3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86D3456-1C80-40E7-B41F-76C0CFC2F3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86D3456-1C80-40E7-B41F-76C0CFC2F3D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {351193CA-B55B-4723-B06F-D7BB7D1467DA}
+		SolutionGuid = {7229D991-4A93-45E9-A3C9-518B0AF9F70F}
 	EndGlobalSection
 EndGlobal

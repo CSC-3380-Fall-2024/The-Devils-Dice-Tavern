@@ -3,7 +3,6 @@
 
 <PageTitle>SignUp</PageTitle>
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,7 +106,18 @@
         .password-fields div {
             width: 48%; 
         }
-
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #5c4033;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            background: none;
+            border: none;
+        }
         .dropdown-container {
             margin-bottom: 15px;
             width: 100%;
@@ -121,30 +131,7 @@
             background-color: #f8f4e9;
             font-size: 14px;
         }
-
-        /* Footer */
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #2f4f4f;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            align-items: left;
-            gap: 20px;
-
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
+       
     </style>
 </head>
 <body>
@@ -153,7 +140,7 @@
     <!-- Signup Form -->
     <div class="signup-container">
         <h2>Sign Up</h2>
-        <form>
+        <form action="SignUpConfirmation" method="get">
             <div class="name-fields">
                 <div>
                     <label for="first-name">First Name</label>
@@ -191,23 +178,34 @@
                 </select>
             </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit">Submit</button>
             <p>
                 <a href="login" class="login-link">Already have an account? Log In</a>
             </p>
         </form>
     </div>
+             <script>
+        async function submitForm() {
+            const form = document.getElementById("signUpForm");
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
 
+            const response = await fetch('/api/SignUp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
 
-        @code {
-            
-        private void HandleSubmit()
-        {
-        
-            // Redirect to the SignUpConfirmation page
-            NavigationManager.NavigateTo("/SignUpConfirmation");
+            if (response.ok) {
+                alert("Sign up successful!");
+                window.location.href = '/SignUpConfirmation';
+            } else {
+                const error = await response.json();
+                alert("Error: " + JSON.stringify(error));
+            }
         }
-    }
-
+    </script>
+    
 </body>
-</html>

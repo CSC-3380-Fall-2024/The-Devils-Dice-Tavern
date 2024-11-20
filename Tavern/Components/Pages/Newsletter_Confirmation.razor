@@ -1,0 +1,149 @@
+@page "/Newsletter_Confirmation"
+
+<!--<PageTitle>Newsletter</PageTitle>-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil's Dice Tavern - Newsletter Confirmation</title>
+    <style>
+        /* Reset and page setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Baskerville;
+            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/newsletter_background.png");
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            width: 100%;
+            background-color: #2f4f4f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form container */
+        .signup-container {
+            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/Scrolls/Vector.png"); /* Replace with parchment image URL */
+            background-size: cover;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            text-align: center;
+            color: #5c4033;
+            font-family: Baskerville;
+        }
+        .signup-container h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .signup-container label {
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .signup-container p {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .signup-container button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .signup-container button:hover {
+            background-color: #555;
+        }
+        .signup-container .login-link {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #2f4f4f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .footer a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <span>Devils Dice Tavern</span>
+        <a href="#">Log In</a>
+        <a href="#">Online Shop</a>
+        <a href="#">Events</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h2>
+           Thanks for subscribing to our Newsletter!
+        </h2>
+		<p>
+			You're now subscribed to our newsletter! You'll hear from us shortly.
+		</p>
+		<button type="home-page">Back to Home Page</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Socials</a>
+    </div>
+
+</body>
+</html>

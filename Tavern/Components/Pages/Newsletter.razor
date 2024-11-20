@@ -1,15 +1,11 @@
 @page "/Newsletter"
 
-<!--<PageTitle>Newsletter</PageTitle>-->
+<PageTitle>Newsletter</PageTitle>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devil's Dice Tavern - Newsletter Sign Up</title>
     <style>
         /* Reset and page setup */
-        * {
+        html, body {
             margin: 0;
             padding: 0;
             /*box-sizing: border-box;*/
@@ -19,12 +15,14 @@
             background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/newsletter_background.png");
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             color: #333;
             position: relative;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
             justify-content: center;
+
         }
 
         /* Navigation bar */
@@ -56,8 +54,9 @@
             background-size: cover;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             width: 300px;
+            margin-bottom: 20px;
+            margin-top: 30px;
             text-align: center;
             color: #5c4033;
             font-family: Baskerville;
@@ -99,7 +98,7 @@
             font-size: 14px;
         }
 
-        /* Footer */
+        /* Footer 
         .footer {
             position: absolute;
             bottom: 0;
@@ -116,10 +115,9 @@
             font-size: 14px;
         }
         .footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline; */
         }
     </style>
-</head>
 <body>
 
     <!--
@@ -150,13 +148,14 @@
         </form>
     </div>
 
-    <!-- Footer -->
+    <!--
+    -- Footer --
     <div class="footer">
         <a href="#">Contact Us</a>
         <a href="#">Terms of Service</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Socials</a>
     </div>
+    -->
 
 </body>
-</html>

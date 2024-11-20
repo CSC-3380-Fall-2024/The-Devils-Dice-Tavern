@@ -12,7 +12,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            /*box-sizing: border-box;*/
         }
         body {
             font-family: Baskerville;
@@ -20,7 +20,7 @@
             background-size: cover;
             background-position: center;
             color: #333;
-            display: flex;
+            position: relative;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
@@ -28,6 +28,7 @@
         }
 
         /* Navigation bar */
+        /*
         .navbar {
             width: 100%;
             background-color: #2f4f4f;
@@ -47,6 +48,7 @@
         .navbar a:hover {
             text-decoration: underline;
         }
+        */
 
         /* Form container */
         .signup-container {
@@ -120,7 +122,8 @@
 </head>
 <body>
 
-    <!-- Navigation bar -->
+    <!--
+     Navigation bar
     <div class="navbar">
         <span>Devils Dice Tavern</span>
         <a href="#">Log In</a>
@@ -128,6 +131,7 @@
         <a href="#">Events</a>
         <a href="#">About Us</a>
     </div>
+    -->
 
     <!-- Signup Form -->
     <div class="signup-container">
@@ -139,7 +143,10 @@
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
 
-            <button type="submit">Submit</button>
+            <a href="/Newsletter_Confirmation">
+                <button type="submit">Submit</button>
+            </a>
+        
         </form>
     </div>
 

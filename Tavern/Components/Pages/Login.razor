@@ -1,13 +1,13 @@
 @page "/Login"
 
 <PageTitle>Login</PageTitle>
-
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devil's Dice Tavern - Login</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
         body {
             font-family: Baskerville;
@@ -17,14 +17,16 @@
             background-repeat: no-repeat;
             color: #333;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
             min-height: 100vh;
             height: 100%;
-            place-items: center;
-            margin: 0;
-            padding: 0;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            /*place-items: center;*/
         }
+        
         .login-container {
             background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/Scrolls/Vector.png"); 
             background-size: cover;
@@ -51,6 +53,8 @@
             width: 100%;
             padding: 8px;
             margin-bottom: 15px;
+            border: 1px solid #5c4033;
+            border-radius: 5px;
             background-color: #f8f4e9;
             
         }
@@ -59,7 +63,10 @@
             color: white;
             padding: 10px;
             width: 100%;
+            border: none;
+            border-radius: 5px;
             font-size: 18px;
+            cursor: pointer;
         }
         .login-container button:hover {
             background-color: #555;
@@ -69,7 +76,7 @@
             font-size: 14px;
         }
     </style>
-
+</head>
 <body>
     
     <div class="login-container">

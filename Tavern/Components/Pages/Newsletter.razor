@@ -13,7 +13,7 @@
         html, body {
             margin: 0;
             padding: 0;
-            /*box-sizing: border-box;*/
+            box-sizing: border-box;
         }
         body {
             font-family: Baskerville;
@@ -22,7 +22,7 @@
             background-position: center;
             background-repeat: no-repeat;
             color: #333;
-            position: relative;
+            display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
@@ -35,7 +35,6 @@
         }
 
         /* Navigation bar */
-        /*
         .navbar {
             width: 100%;
             background-color: #2f4f4f;
@@ -47,7 +46,7 @@
             left: 0;
         }
         .navbar a {
-            margin: 0 15px;
+            margin: 0 15px;-
             color: white;
             text-decoration: none;
             font-size: 16px;
@@ -55,7 +54,6 @@
         .navbar a:hover {
             text-decoration: underline;
         }
-        */
 
         /* Form container */
         .signup-container {
@@ -135,9 +133,8 @@
         }
     </style>
 <body>
-
-    <!--
-     Navigation bar
+    
+    <!-- Navigation bar 
     <div class="navbar">
         <span>Devils Dice Tavern</span>
         <a href="#">Log In</a>
@@ -145,8 +142,7 @@
         <a href="#">Events</a>
         <a href="#">About Us</a>
     </div>
-    -->
-
+---->
     <!-- Signup Form -->
     <div class="signup-container">
         <h2>Get Newsletter</h2>
@@ -157,21 +153,8 @@
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
 
-            <a href="/Newsletter_Confirmation">
-                <button type="submit">Submit</button>
-            </a>
-        
+            <button type="submit">Submit</button>
         </form>
     </div>
-
-    <!--
-    Footer
-    <div class="footer">
-        <a href="#">Contact Us</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Socials</a>
-    </div>
-    -->
-
 </body>
+</html>

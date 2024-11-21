@@ -24,7 +24,7 @@
                 <h1>Tharizdun’s Awakening</h1>
                 <p>Campaign Started: 6/29/2024</p>
                 <h2>5</h2>
-                <p style="padding-bottom: 50px;">Players</p>
+                <p>Players</p>
                 <p>Role: Player</p>
                 <p>DM: Username</p>
                 <div class="campaignline"></div>
@@ -47,7 +47,7 @@
                 <h1>Curse of Strahd</h1>
                 <p>Campaign Started: 6/29/2024</p>
                 <h2>4</h2>
-                <p style="padding-bottom: 50px;">Players</p>
+                <p>Players</p>
                 <p>Role: Dungeon Master</p>
                 <div class="campaignline"></div>
                 <a href="#viewcampaign" class="action-link">View Campaign</a>
@@ -82,7 +82,7 @@
                 <h1>Curse of Strahd</h1>
                 <p>Campaign Started: 6/29/2024</p>
                 <h2>3</h2>
-                <p style="padding-bottom: 50px;">Players</p>
+                <p>Players</p>
                 <p>Role: Dungeon Master</p>
                 <div class="campaignline"></div>
                 <a href="#activate" class="action-link">Activate</a>
@@ -135,7 +135,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        padding-top: 50px;
+        padding-top: 150px;
         padding-right: 50px;
         padding-bottom: 300px; 
     }
@@ -144,8 +144,7 @@
         opacity: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center
+        align-items: left;
         padding: 50px;
         padding-bottom: 50px;
     }
@@ -153,13 +152,15 @@
     .mainbody-text {
         text-align: left;
         color: white;
-        padding-left: 100px;
+        padding-left: 0%;
         text-shadow: 0px 4px 6px rgba(0, 0, 0, 1); /* Adding a shadow to the text */
         line-height: 260%;
     }
 
     .line {
-        width: 1920px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
         height: 3px;
         background-color: #ffffff69;  /* White color */
         opacity: 1;  /* Ensure full opacity */
@@ -183,7 +184,7 @@
         position: relative;  /* Allows positioning of the overlay on the image */
         width: 30%;  /* Adjust width to your liking (e.g., 30% for 3 items per row) */
         overflow: show;  /* Hide anything that overflows the container */
-        text-shadow: 0px 0px 4px rgb(36, 5, 5, 1);
+        text-shadow: 0px 0px 4px #612B24;
     }
 
     /* Style for images */
@@ -200,21 +201,34 @@
         left: 50%;  /* Center horizontally */
         transform: translate(-50%, -50%);  /* Adjust for exact centering */
         color: #612B24;  /* Text color */
-        background: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for text readability */
+        background: rgba(0, 0, 0, 0);  /* Semi-transparent background for text readability */
         padding: 10px;
         text-align: center;
         width: 90%;  /* Adjust width of the overlay container */
+        height: 90%;
         border-radius: 10px;
+        padding-top: 25px;
+    }
+
+    .text-overlay h1 {
+        margin: 0;
+        /*font-size: 24px;*/
+        font-size: 2vw;
+        line-height: 2vw;
     }
 
     .text-overlay h2 {
         margin: 0;
-        font-size: 24px;
+        /*font-size: 24px;*/
+        font-size: 1.5vw;
+        line-height: 2vw;
     }
 
     .text-overlay p {
         margin-top: 10px;
-        font-size: 16px;
+        /*font-size: 16px;*/
+        font-size: 1.25vw;
+        line-height: 2vw;
     }
 
     .small-images-row {
@@ -223,14 +237,14 @@
         left: 50%;  /* Center the row horizontally */
         transform: translateX(-50%);  /* Exact centering */
         display: flex;  /* Align images in a row */
-        gap: 10px;  /* Space between small images */
+        gap: 0.5vw;  /* Space between small images */
         z-index: 10;  /* Ensure the row of small images appears on top of the main image */
     }
 
     /* Style for the small images */
     .small-images-row img {
-        width: 50px;  /* Set the size of the small images */
-        height: 50px;
+        width: 3vw;  /* Set the size of the small images */
+        height: auto;
         object-fit: cover;  /* Make the images cover their container and maintain aspect ratio */
         border-radius: 5px;  /* Optional: rounded corners for small images */
         border-color: #000000;
@@ -253,15 +267,55 @@
         padding: 20px;  /* Add some padding for a button-like look */  /* Add border around the link */
         border-radius: 5px;  /* Rounded corners */
         transition: all 0.3s ease;  /* Smooth transition effect */
+        font-size: 1.25vw;
+        line-height: 2vw;
     }
 
     .action-link:hover {
         color: white;  /* Change text color on hover */
         cursor: pointer;  /* Change cursor to pointer */
+        text-shadow: 0px 0px 4px #000000;
     }
 
     .action-link:active {
-        background-color: #0056b3;  /* Darken the background on click */
+        
+    }
+
+    /* Media query for smaller viewports */
+    @@media (max-width: 1504px) {
+        .text-overlay h1 {
+            margin: 0;
+            /*font-size: 24px;*/
+            font-size: 1.75vw;
+            line-height: 1vw;
+        }
+
+        .text-overlay h2 {
+            margin: 0;
+            /*font-size: 24px;*/
+            font-size: 1.5vw;
+            line-height: 1vw;
+        }
+
+        .text-overlay p {
+            margin-top: 10px;
+            /*font-size: 16px;*/
+            font-size: 1.25vw;
+            line-height: 1vw;
+        }
+
+        .action-link {
+            font-size: 1.25vw;  /* Smaller font size */
+            line-height: 1vw;  /* Smaller line height */
+        }
+    }
+
+    /* Optional: For even smaller screens, you can have another media query */
+    @@media (max-width: 1024px) {
+        .action-link {
+            font-size: 1.25vw;  /* Further smaller font size */
+            line-height: 1.3;  /* Further smaller line height */
+        }
     }
 
 </style>

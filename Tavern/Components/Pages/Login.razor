@@ -1,9 +1,101 @@
 @page "/Login"
+<div class="centering">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
 
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <p><a href="/forgot-password">Forgot your password?</a></p>
+            <p><a href="/SignUp">Don't have an account? Sign Up here!</a></p>
+
+        <a href="/Campaign">
+            <button type="submit">Submit</button>
+        </a>
+        </form>
+    </div> 
+</div>
+<style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("/imgs/signup_background2.png");
+        background-repeat: no-repeat;
+    }
+    .centering {
+        padding-left: 500px;
+    }
+    .mainheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-repeat: no-repeat;
+        color: #333;
+        background-size: cover;
+        background-position: top left;
+    }
+      .mainheader-text {
+        text-align: center;
+        color: #333;
+        font-family: Baskerville;
+    }
+    .login-container {
+        width: 300px;
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 30px;
+        background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/Scrolls/Vector.png");
+        background-repeat: no-repeat;
+        color: #5c4033;
+        background-size: cover;
+        background-position: top left;
+        text-align: center;
+        align-items: center;
+    }
+    .login-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #5c4033;
+        border-radius: 5px;
+        background-color: #f8f4e9;
+  
+    .login-container button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .login-container button:hover {
+        background-color: #555;
+    }
+    .login-container .login-link {
+         margin-top: 10px;
+        font-size: 14px;
+    }
+
+
+</style>
 <PageTitle>Login</PageTitle>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devil's Dice Tavern - Login</title>
+    <!--<title>Devil's Dice Tavern - Login</title>
     <style>
         html, body {
             margin: 0;
@@ -11,7 +103,7 @@
         }
         body {
             font-family: Baskerville;
-            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/signup_background.png"); /* Add background URL here */
+            background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/d5536933e9ebe9d56102098bc653a7f38d8def31/Tavern/wwwroot/imgs/signup_background.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -76,8 +168,6 @@
             font-size: 14px;
         }
     </style>
-</head>
-<body>
     
     <div class="login-container">
         <h2>Login</h2>
@@ -98,5 +188,5 @@
             <button type="submit">Submit</button>
         </a>
         </form>
-    </div>
-</body>
+    </div> 
+    ---->

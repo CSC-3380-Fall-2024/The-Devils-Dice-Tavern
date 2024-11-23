@@ -4,12 +4,21 @@
 <div class="centering">
     <div class="newsletter-container">
         <h2>Get Newsletter</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- API Implementation -->
+            <input type="hidden" name="access_key" value="c508243c-7955-4d62-b5d3-1382b39a7027">
+            <!-- API Honepot Spam Protection -->
+            <!--<input type="checkbox" name="botcheck" class="hidden" style="display: none;")-->
+            <!-- Create a custom subject line based on user's input -->
+            <input type="hidden" name="subject" value="Thanks for subscribing to our newsletter ${name}!">
+
             <label for="name">Name</label>
             <input type="name" id="name" name="name" required>
 
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" required>
+            <!--Message area: added for troubleshooting, should delete later-->
+            <!--<textarea name="message" required></textarea>-->
 
         <a href="/Newsletter_Confirmation">
             <button type="submit">Submit</button>

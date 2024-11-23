@@ -35,6 +35,19 @@
 </div>
 
 <style>
+
+    /*Removes scrolling "bounce"*/
+    :root{
+        overscroll-behavior: none;
+    }
+
+    /*Removes side-scrolling
+    NOTE: About page still has zoom-in bug*/
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     /*padding for the links in nav */
     .nav li{
         float: left;

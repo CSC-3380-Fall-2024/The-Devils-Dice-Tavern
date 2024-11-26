@@ -1,12 +1,17 @@
 using Tavern.Components;
+using Tavern.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
+builder.Services.AddScoped<Database>();
+builder.Configuration.AddJsonFile("secrets.json",
+        optional: true,
+        reloadOnChange: true);
 var app = builder.Build();
+Environment.SetEnvironmentVariable("ConnectionStr", builder.Configuration.GetSection("MySQL:ConnectionString").Value);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

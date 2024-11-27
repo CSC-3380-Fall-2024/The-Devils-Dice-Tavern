@@ -138,25 +138,20 @@
 </style>
 
 @code {
-    // Track the selected button
     private int selectedButton = -1;
 
-    // Method to handle button selection or deselection
     private void SelectButton(int buttonNumber, char query)
     {
         if (selectedButton == buttonNumber)
         {
-            // Deselect the button if it's already selected
             selectedButton = -1;
         }
         else
         {
-            // Select the button
             selectedButton = buttonNumber;
         }
     }
 
-    // Method to get the class for the button based on selection
     private string ButtonState(int buttonNumber)
     {
         return selectedButton == buttonNumber ? "selected" : "deselected";

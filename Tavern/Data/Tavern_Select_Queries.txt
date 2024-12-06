@@ -1,3 +1,4 @@
+NOTE - Queries in MySQL, txt file for proof in VS Code / pull request
 -- SELECT * Queries
 SELECT * FROM Carts;
 SELECT * FROM Contact_List;

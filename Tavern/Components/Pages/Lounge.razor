@@ -4,37 +4,26 @@
 
 <PageTitle>TheLounge</PageTitle>
 <div class="page">
-    <!-- The Lounge Page Content -->
     <article class="lounge-page">
         <h1 class="lounge-title">The Lounge</h1>
         
-        <!-- Create New Post Button -->
         <div class="create-post">
             <a href="CreatePost" class="button">Create New Post</a>
         </div>
 
-        <!-- Lounge Posts List (Masonry Grid) -->
         <div class="posts-list">
-            <!-- Potion of Strength -->
             <div class="post-card food-post">
-                <!-- Image Above the Post -->
-               <!-- <div class="post-thumbnail">
-                    <img src="https://i.pinimg.com/736x/08/a6/59/08a659bafbdf0b6a6bb42e009f858bca.jpg" alt="Potion of Strength Thumbnail" class="post-thumbnail-img" />
-                </div> -->
-                
+               
                 <div class="post-image">
-                    <!-- Clickable image to reveal post details -->
                     <img src="https://i.pinimg.com/736x/08/a6/59/08a659bafbdf0b6a6bb42e009f858bca.jpg" alt="Potion of Strength" class="post-expand-btn" data-post="potionStrength" />
                 </div>
                 <div class="post-info">
                     <div class="post-title">
-                        <!-- Clickable title to reveal post details -->
                         <h2 class="post-expand-btn" data-post="potionStrength">Potion of Strength</h2>
                     </div>
                     <div class="post-meta">
                         <span>Posted by: The Alchemist</span>
                     </div>
-                    <!-- Hidden content that will expand upon clicking -->
                     <div class="post-content" id="potionStrength" style="display: none;">
                         <h3>Description:</h3>
                         <p>Boost your strength and energy with this powerful **Potion of Strength**! Perfect for adventurers heading into battle, this brew will give you the extra push you need.</p>
@@ -60,26 +49,21 @@
                 </div>
             </div>
 
-            <!-- DIY Resin Dragon Horns -->
             <div class="post-card diy-post">
-                <!-- Image Above the Post -->
                 <div class="post-thumbnail">
                     <img src="imgs/diy-resin-dragon-horns-thumbnail.jpg" alt="DIY Resin Dragon Horns Thumbnail" class="post-thumbnail-img" />
                 </div>
                 
                 <div class="post-image">
-                    <!-- Clickable image to reveal post details -->
                     <img src="imgs/diy-resin-dragon-horns.jpg" alt="DIY Resin Dragon Horns" class="post-expand-btn" data-post="dragonHorns" />
                 </div>
                 <div class="post-info">
                     <div class="post-title">
-                        <!-- Clickable title to reveal post details -->
                         <h2 class="post-expand-btn" data-post="dragonHorns">DIY Resin Dragon Horns</h2>
                     </div>
                     <div class="post-meta">
                         <span>Posted by: The Crafter</span>
                     </div>
-                    <!-- Hidden content that will expand upon clicking -->
                     <div class="post-content" id="dragonHorns" style="display: none;">
                         <h3>Description:</h3>
                         <p>Create your very own **Resin Dragon Horns** with this DIY tutorial! Whether for cosplay, decor, or just for fun, these horns will add a mythical touch to any room.</p>
@@ -114,26 +98,21 @@
                 </div>
             </div>
 
-            <!-- Goblin Stew -->
             <div class="post-card food-post">
-                <!-- Image Above the Post -->
                 <div class="post-thumbnail">
                     <img src="imgs/goblin-stew-thumbnail.jpg" alt="Goblin Stew Thumbnail" class="post-thumbnail-img" />
                 </div>
                 
                 <div class="post-image">
-                    <!-- Clickable image to reveal post details -->
                     <img src="imgs/goblin-stew.jpg" alt="Goblin Stew" class="post-expand-btn" data-post="goblinStew" />
                 </div>
                 <div class="post-info">
                     <div class="post-title">
-                        <!-- Clickable title to reveal post details -->
                         <h2 class="post-expand-btn" data-post="goblinStew">Goblin Stew</h2>
                     </div>
                     <div class="post-meta">
                         <span>Posted by: The Chef</span>
                     </div>
-                    <!-- Hidden content that will expand upon clicking -->
                     <div class="post-content" id="goblinStew" style="display: none;">
                         <h3>Description:</h3>
                         <p>Get ready for a hearty and wild meal with **Goblin Stew**! A recipe passed down through generations, it’s a favorite for adventurers who need a filling meal before setting out.</p>
@@ -179,7 +158,6 @@
         height: 100%;
         overscroll-behavior: none;
     }
-    /* Styling for the lounge page and components */
     .page {
         background-image: url('https://wallpapercave.com/wp/wp2361283.jpg');
         background-size: cover;
@@ -286,7 +264,6 @@
 </style>
 
 <script>
-    // JavaScript to handle the click-to-expand functionality
     document.querySelectorAll('.post-expand-btn').forEach(item => {
         item.addEventListener('click', function() {
             const postId = item.getAttribute('data-post');

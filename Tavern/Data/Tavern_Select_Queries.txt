@@ -1,0 +1,30 @@
+NOTE - Queries in MySQL, txt file for proof in VS Code / pull request
+-- SELECT * Queries
+SELECT * FROM Carts;
+SELECT * FROM Contact_List;
+SELECT * FROM Orders;
+SELECT * FROM Product;
+SELECT * FROM Users;
+
+-- SELECT Filters for Shop
+SELECT Item_Type
+FROM Product;
+SELECT Price
+FROM Product;
+SELECT Item_Name
+FROM Product;
+SELECT Color
+From Product;
+
+-- SELECT User Queries
+SELECT First_Name
+FROM Users;
+SELECT Last_Name
+FROM Users;
+SELECT Username
+FROM Users;
+SELECT Email
+FROM Users;
+SELECT User_Role
+FROM Users;
+

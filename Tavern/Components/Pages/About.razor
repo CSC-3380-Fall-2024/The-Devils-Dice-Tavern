@@ -52,8 +52,8 @@
     <div class="line"/>
     <div class="partners-container">
         <div class="partner-header">
-            <h1 style="font-size: 64px; font-style: bold;">Sponsors and Partners</h1>
-            <h3 style="word-wrap: break-word; padding-bottom: 75px;">We partner with humble, trusting, small businesses that think creatively. Artists and creators who believe in the products they’re making, embrace their work, and want to foster a community to advocate for expression.</h3>
+            <h1>Sponsors and Partners</h1>
+            <h3>We partner with humble, trusting, small businesses that think creatively. Artists and creators who believe in the products they’re making, embrace their work, and want to foster a community to advocate for expression.</h3>
         </div>
         <div class="partnerbody-container">
             <div>
@@ -104,6 +104,7 @@
         height: 100%;
         overscroll-behavior: none;
     }
+
     .aboutheader {
         width: 100%;
         height: 100%;
@@ -131,9 +132,7 @@
 
     .aboutbody {
         position: relative; 
-        background-image: linear-gradient(0deg, #505050 0%, #505050 100%), 
-                    radial-gradient(100.00% 100.00%, rgba(0, 0, 0, 0) 67%,
-                    rgba(0, 0, 0, 0.15) 100%), url("/imgs/jane_doe.jpg");
+        background-image: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.45)), url("/imgs/jane_doe.jpg");
     }
 
     .aboutbody-container {
@@ -214,6 +213,16 @@
         padding-top: 75px;
     }
 
+    .partner-header h1 {
+        font-size: 64px; 
+        font-style: bold;
+    }
+
+    .partner-header h3 {
+        word-wrap: break-word;
+        padding-bottom: 75px;
+    }
+
     .partners-container {
         /*background:
             linear-gradient(to bottom, 
@@ -278,6 +287,123 @@
     .aboutfooter-button-placement {
         padding-top: 70px;
         padding-bottom: 50px;
+    }
+
+    @@media (max-width: 375px) {
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .aboutheader {
+            width: 100%;
+            height: 50vh;
+            margin: 0%;
+            padding: 0%;
+            background-image: linear-gradient(rgba(20, 20, 17, 0), rgba(20, 20, 17, 0.85)), url("/imgs/aboutus_background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top left;
+        }
+
+        .aboutheader-text h1 {
+            font-size: 64px !important;
+            padding-top: 130px;
+            padding-bottom: 250px;
+            margin-bottom: 0rem;
+        }
+
+        .aboutbody-container {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-img {
+            padding-top: 25px;
+            padding-bottom: 50px;
+            padding-right: 25px;
+            padding-left: 25px;
+            max-width: 100vw;
+            max-height: auto;
+        }
+
+        .aboutbody-text {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .partner-header {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .partner-header h1 {
+            font-size: 40px; 
+            font-style: bold;
+        }
+
+        .partner-header h3 {
+            word-wrap: break-word;
+            padding-bottom: 75px;
+        }
+
+        .partnerbody-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mainfooter {
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            padding: 0%;
+            background-image: linear-gradient(rgba(20, 20, 17, 0.50), rgba(20, 20, 17, 0.50)), url("/imgs/mainpagefooter.png");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top left;
+        }
+
+        .mainfooter-text {
+            text-align: center;
+            color: white;
+        }
+
+        .icon {
+            width: 25vw;
+            height: auto;
+            align: center;
+        }
+
+        .icon-placement {
+            padding-top: 40px;
+        }
+
+        .mainfooter-text-placement {
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .mainfooter-text-placement h2 {
+            font-size: 25px;
+        }
+
+        .mainfooter-button {
+            width: 225px;
+            height: 70px;
+            font-size: 25px;
+            align: center;
+        }
+
+        .mainfooter-button-placement {
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
     }
 
 </style>

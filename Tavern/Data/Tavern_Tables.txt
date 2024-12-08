@@ -1,0 +1,45 @@
+NOTE - Tables created in MySQL. Added here for proof in GitHub / pull request.
+
+CREATE TABLE `Carts` (
+  `Cart_ID` varchar(255) NOT NULL,
+  `Price` double DEFAULT NULL,
+  PRIMARY KEY (`Cart_ID`)
+)
+
+CREATE TABLE `Contact_List` (
+  `CLI_ID` varchar(255) NOT NULL,
+  `Last_Name` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`CLI_ID`)
+)
+
+CREATE TABLE `Orders` (
+  `Order_ID` varchar(255) NOT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `Address` varchar(255) DEFAULT NULL,
+  `Delivered` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`Order_ID`)
+)
+
+CREATE TABLE `Product` (
+  `Product_ID` varchar(255) NOT NULL,
+  `Item_Type` varchar(255) DEFAULT NULL,
+  `Price` int DEFAULT NULL,
+  `Item_Name` varchar(255) DEFAULT NULL,
+  `Image` varchar(255) DEFAULT NULL,
+  `Item_Desc` varchar(255) DEFAULT NULL,
+  `Stock_num` int DEFAULT NULL,
+  `Color` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Product_ID`)
+)
+
+CREATE TABLE `Users` (
+  `User_ID` varchar(255) NOT NULL,
+  `First_Name` varchar(255) DEFAULT NULL,
+  `Last_Name` varchar(255) DEFAULT NULL,
+  `Username` varchar(255) DEFAULT NULL,
+  `User_Password` varchar(255) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `User_Role` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`User_ID`)
+)

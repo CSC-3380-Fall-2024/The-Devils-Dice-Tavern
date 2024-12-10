@@ -1,100 +1,165 @@
 @page "/Newsletter_Confirmation"
 
 <PageTitle>Newsletter_Confirmation</PageTitle>
-<div class="centering">
-    <div class="confirmation-container">
-        <h2>Thanks for subscribing to our Newsletter!</h2>
-        <p>
-			You're now subscribed to our newsletter! You'll hear from us shortly.
-		</p>
+<div class="mainbody">
 
-        <a href="/Campaign">
-            <button type="home-page">Finished</button>
-        </a>
-    </div> 
+    <div class="scroll-container">
+        <div class="scroll-textcolumn-item">
+            <img id="scroll-img" src="imgs/Scrolls/Vector (3).png" alt="Scroll">
+            <div class="text-overlay">
+                <h1>Thanks for subscribing to our Newsletter!</h1>
+                <p>You're now subscribed to our newsletter! You'll hear from us shortly.</p>
+                <a href="/">
+                        <button type="home">Back to Home</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
 <style>
-    html, body {
-        margin: 0px;
+   html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Baskerville;
+    }
+
+    .mainbody {
+        position: relative;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("/imgs/newsletter_background.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 135px;
+        padding-right: 50px;
+        padding-bottom: 135px;  
+    }
+
+    .mainbody-container {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .scroll-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .scroll-textcolumn-item {
+        position: relative; 
+        width: 37%;  
+        overflow: show;
+        text-shadow: 0px 0px 4px #612B24;
+    }
+
+    /* Style for images */
+    .scroll-textcolumn-item img {
+        width: 100%; 
+        height: 90%;  
+        display: block;  
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 45%; 
+        left: 50%;  
+        transform: translate(-50%, -50%); 
+        color: #612B24; 
         padding: 0px;
-        background-image: url("/imgs/newsletter_background_2.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    html {
-        overflow: hidden;
-        height: 100%;
-    }
-
-    body {
-        overflow: auto;
-        height: 100%;
-        overscroll-behavior: none;
-    }
-    .centering {
-        padding-left: 500px;
-    }
-    .mainheader {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        padding: 0%;
-        background-repeat: no-repeat;
-        color: #333;
-        background-size: cover;
-        background-position: top left;
-    }
-      .mainheader-text {
         text-align: center;
-        color: #333;
-        font-family: Baskerville, Arial, Helvetica;
-
-    }
-    .confirmation-container {
-        width: 300px;
+        width: 90%; 
         height: 100%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding: 30px;
-        background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/Scrolls/Vector.png");
-        background-repeat: no-repeat;
-        color: #5c4033;
-        background-size: cover;
-        background-position: top left;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-    .confirmation-container h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+        justify-content: center;
     }
 
-    .confirmation-container input[type="name"],
-    .confirmation-container input[type="email"] {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 15px;
-        border: 1px solid #5c4033;
-        border-radius: 5px;
-        background-color: #f8f4e9;
-  
-    .confirmation-container button {
-        background-color: #333;
+    .text-overlay h1 {
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    .text-overlay p {
+        margin-top: 10px;
+        font-size: 0.97vw;
+        line-height: 3vw;
+    }
+
+    label {
+        font-size: 0.9vw;
+    }
+    
+    button {
+        background-color: #000;
         color: white;
-        padding: 10px;
+        padding: 10px 15px;
         border: none;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 1vw;
         cursor: pointer;
     }
-    .confirmation-container button:hover {
-        background-color: #555;
-    }
-    .confirmation-container .confirmation-link {
-         margin-top: 10px;
-        font-size: 14px;
-    }
 
+    @@media (max-width: 375px) {
+
+        .mainbody {
+            padding-top: 160px;
+            padding-right: 50px;
+            padding-bottom: 145px;  
+        }
+
+        #scroll-img{      
+            content:url("imgs/Scrolls/scroll.png");
+        } 
+        
+        .scroll-container {
+            display: flex;
+            justify-content: left;
+            width: 312%;
+            padding: 0px;
+        }
+
+        .text-overlay h1 {
+            font-size: 8vw;
+            line-height: 5vw;
+        }
+
+        .text-overlay p {
+            margin-top: 10px;
+            font-size: 6vw;
+            line-height: 7vw;
+        }
+
+        label {
+            font-size: 4vw;
+        }
+
+        .scroll-textcolumn-item input[type="email"] {
+            height: 5vh;
+            padding: 8px;
+            margin-bottom: 1vw;
+            border: 3px solid #612B24;
+            border-radius: 5px;
+        }
+    
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 4vw;
+            cursor: pointer;
+            margin-top: 2vh;
+        }
+
+    }
 
 </style>
-<PageTitle>Newsletter Confirmation</PageTitle>

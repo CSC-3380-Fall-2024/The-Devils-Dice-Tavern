@@ -1,112 +1,224 @@
 @page "/Newsletter"
 
-<PageTitle>Newsletter</PageTitle>
-<div class="centering">
-    <div class="newsletter-container">
-        <h2>Get Newsletter</h2>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <!-- API Implementation -->
-            <input type="hidden" name="access_key" value="c508243c-7955-4d62-b5d3-1382b39a7027">
-            <!-- API Honepot Spam Protection -->
-            <!--<input type="checkbox" name="botcheck" class="hidden" style="display: none;")-->
-            <!-- Create a custom subject line based on user's input -->
-            <input type="hidden" name="subject" value="Thanks for subscribing to our newsletter ${name}!">
+<div class="page-container">
+    <div class="mainbody">
+        <div class="scroll-container">
+            <div class="scroll-textcolumn-item">
+                <img id="scroll-img" src="imgs/Scrolls/Vector (3).png" alt="Scroll">
+                <div class="text-overlay">
+                    <h1>Get Newsletter</h1>
 
-            <label for="name">Name</label>
-            <input type="name" id="name" name="name" required>
-
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
-            <!--Message area: added for troubleshooting, should delete later-->
-            <!--<textarea name="message" required></textarea>-->
-
-        <a href="/Newsletter_Confirmation">
-            <button type="submit">Submit</button>
-        </a>
-        </form>
-    </div> 
+                    <form id="name&emailForm">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <a href="/Newsletter_Confirmation">
+                            <button type="submit">Submit</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 <style>
-    html, body {
+   html, body {
+        height: 100%;
         margin: 0px;
         padding: 0px;
-        background-image: url("/imgs/newsletter_background_2.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+        font-family: Baskerville;
+        overscroll-behavior: none;
+        display: flex;
+        flex-direction: column;
     }
     html {
         overflow: hidden;
         height: 100%;
     }
 
-    body {
-        overflow: auto;
-        height: 100%;
-        overscroll-behavior: none;
-    }
-    .centering {
-        padding-left: 500px;
-    }
-    .mainheader {
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        padding: 0%;
-        background-repeat: no-repeat;
-        color: #333;
-        background-size: cover;
-        background-position: top left;
-    }
-      .mainheader-text {
-        text-align: center;
-        color: #333;
-        font-family: Baskerville, Arial, Helvetica;
-
-    }
-    .newsletter-container {
-        width: 300px;
-        height: 100%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding: 30px;
-        background-image: url("/imgs/Scrolls/scroll.png");
-        background-repeat: no-repeat;
-        color: #5c4033;
-        background-size: cover;
-        background-position: top left;
-        text-align: center;
-        align-items: center;
-    }
-    .newsletter-container h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 
-    .newsletter-container input[type="name"],
-    .newsletter-container input[type="email"] {
+    .mainbody {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("/imgs/newsletter_background.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 135px;
+        padding-right: 50px;
+        padding-bottom: 135px; 
+    }
+
+    .mainbody-container {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .scroll-container {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        padding: 8px;
-        margin-bottom: 15px;
-        border: 1px solid #5c4033;
-        border-radius: 5px;
-        background-color: #f8f4e9;
-  
-    .newsletter-container button {
-        background-color: #333;
-        color: white;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .scroll-textcolumn-item {
+        position: relative; 
+        width: 37%;  
+        overflow: show;
+        text-shadow: 0px 0px 4px #612B24;
+    }
+
+    /* Style for images */
+    .scroll-textcolumn-item img {
+        width: 100%; 
+        height: 90%;  
+        display: block;  
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 45%; 
+        left: 50%;  
+        transform: translate(-50%, -50%); 
+        color: #612B24; 
         padding: 10px;
+        text-align: center;
+        width: 90%; 
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-overlay h1 {
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    .text-overlay p {
+        margin-top: 10px;
+        font-size: 1vw;
+        line-height: 3vw;
+    }
+
+    label {
+        font-size: 0.9vw;
+    }
+
+    .scroll-textcolumn-item input[type="text"] {
+        width: 100%;
+        height: 2.5vw;
+        padding: 8px;
+        margin-bottom: 1vw;
+        border: 2px solid #612B24;
+        border-radius: 5px;
+        background: linear-gradient(rgb(129, 106, 54, 0.25), rgb(214, 177, 96, 0.25));
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-textcolumn-item input[type="email"] {
+        width: 100%;
+        height: 2.5vw;
+        padding: 8px;
+        margin-bottom: 1vw;
+        border: 2px solid #612B24;
+        border-radius: 5px;
+        background: linear-gradient(rgb(129, 106, 54, 0.25), rgb(214, 177, 96, 0.25));
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button {
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
         border: none;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 1vw;
         cursor: pointer;
     }
-    .newsletter-container button:hover {
-        background-color: #555;
-    }
-    .newsletter-container .newsletter-link {
-         margin-top: 10px;
-        font-size: 14px;
+
+    @@media (max-width: 1440px) {
     }
 
+    @@media (max-width: 375px) {
+        
+        .mainbody {
+            padding-top: 160px;
+            padding-right: 50px;
+            padding-bottom: 145px;  
+        }
+
+        #scroll-img{      
+            content:url("imgs/Scrolls/scroll.png");
+        } 
+        
+        .scroll-container {
+            display: flex;
+            justify-content: left;
+            width: 312%;
+            padding: 0px;
+        }
+
+        .text-overlay h1 {
+            font-size: 8vw;
+            line-height: 5vw;
+        }
+
+        .text-overlay p {
+            margin-top: 10px;
+            font-size: 6vw;
+            line-height: 7vw;
+        }
+
+        label {
+            font-size: 4vw;
+        }
+
+        .scroll-textcolumn-item input[type="text"] {
+            height: 5vh;
+            padding: 8px;
+            margin-bottom: 1vw;
+            border: 3px solid #612B24;
+            border-radius: 5px;
+        }
+
+        .scroll-textcolumn-item input[type="email"] {
+            height: 5vh;
+            padding: 8px;
+            margin-bottom: 1vw;
+            border: 3px solid #612B24;
+            border-radius: 5px;
+        }
+    
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 4vw;
+            cursor: pointer;
+            margin-top: 2vh;
+        }
+
+    }
 
 </style>

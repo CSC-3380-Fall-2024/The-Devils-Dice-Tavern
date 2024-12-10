@@ -1,80 +1,165 @@
 @page "/SignUpConfirmation"
 <PageTitle>SignUpConfirmation</PageTitle>
     <title>Devil's Dice Tavern - Sign Up Confirmation</title>
-<div class="centering">
-    <div class="confirmation-container">
-        <h2>Thank You for Signing Up!</h2>
-        <p>Your account has been successfully created.</p>
-        <p>Welcome to the Devil's Dice Tavern! You can now start exploring our world.</p>
-        <button>
-            <a href="/Login" class="button-link">Log In</a>
-        </button>
-        <button>
-            <a href="/" class="button-link">Return to Home</a>
-        </button>
+<div class="mainbody">
+
+    <div class="scroll-container">
+        <div class="scroll-textcolumn-item">
+            <img id="scroll-img" src="imgs/Scrolls/Vector (3).png" alt="Scroll">
+            <div class="text-overlay">
+                <h1>Thank You for Signing Up!</h1>
+                <p>Your account has been successfully created.</p>
+                <a href="/Login">
+                        <button type="login">Back to Log In</button>
+                </a>
+            </div>
+        </div>
     </div>
+
 </div>
+
+
 <style>
-    html, body {
-        margin: 0px;
-        padding: 0px;
-        background-image: url("/imgs/signup_background3.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    html {
-        overflow: hidden;
-        height: 100%;
+   html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Baskerville;
     }
 
-    body {
-        overflow: auto;
-        height: 100%;
-        overscroll-behavior: none;
+    .mainbody {
+        position: relative;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("/imgs/signup_background.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: 135px;
+        padding-right: 50px;
+        padding-bottom: 135px;  
     }
-    .centering {
-        padding-left: 500px;
+
+    .mainbody-container {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
     }
-    .mainheader {
+
+    .scroll-container {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: 100%;
-        margin: 0%;
-        padding: 0%;
-        background-repeat: no-repeat;
-        color: #333;
-        background-size: cover;
-        background-position: top left;
+        margin: 0 auto;
+        padding: 50px;
     }
-      .mainheader-text {
-        text-align: center;
-        color: #333;
-        font-family: Baskerville, Arial, Helvetica;
 
+    .scroll-textcolumn-item {
+        position: relative; 
+        width: 37%;  
+        overflow: show;
+        text-shadow: 0px 0px 4px #612B24;
     }
-    .confirmation-container {
-        width: 300px;
-        height: 100%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        padding: 30px;
-        background-image: url("/imgs/Scrolls/scroll.png");
-        background-repeat: no-repeat;
-        color: #5c4033;
-        background-size: cover;
-        background-position: top left;
+
+    /* Style for images */
+    .scroll-textcolumn-item img {
+        width: 100%; 
+        height: 90%;  
+        display: block;  
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 45%; 
+        left: 50%;  
+        transform: translate(-50%, -50%); 
+        color: #612B24; 
+        padding: 0px;
         text-align: center;
+        width: 90%; 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-    .confirmation-container h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+        justify-content: center;
     }
 
-    .confirmation-container button:hover {
-        background-color: #555;
+    .text-overlay h1 {
+        font-size: 2vw;
+        line-height: 2vw;
     }
-    .confirmation-container .login-link {
+
+    .text-overlay p {
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 0.97vw;
+        line-height: 3vw;
     }
+
+    label {
+        font-size: 0.9vw;
+    }
+    
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+    @@media (max-width: 375px) {
+
+        .mainbody {
+            padding-top: 160px;
+            padding-right: 50px;
+            padding-bottom: 145px;  
+        }
+
+        #scroll-img{      
+            content:url("imgs/Scrolls/scroll.png");
+        } 
+        
+        .scroll-container {
+            display: flex;
+            justify-content: left;
+            width: 312%;
+            padding: 0px;
+        }
+
+        .text-overlay h1 {
+            font-size: 8vw;
+            line-height: 5vw;
+        }
+
+        .text-overlay p {
+            margin-top: 10px;
+            font-size: 6vw;
+            line-height: 7vw;
+        }
+
+        label {
+            font-size: 4vw;
+        }
+
+        .scroll-textcolumn-item input[type="email"] {
+            height: 5vh;
+            padding: 8px;
+            margin-bottom: 1vw;
+            border: 3px solid #612B24;
+            border-radius: 5px;
+        }
+    
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 4vw;
+            cursor: pointer;
+            margin-top: 2vh;
+        }
+
+    }
+
 </style>

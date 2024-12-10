@@ -41,8 +41,18 @@ namespace Tavern.Data {
             }
             return records;
         }
-        public void Update_Entry(string query){
-            
+        public int Update_Entry(string query){
+            int records = 0;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand selectCommand = new MySqlCommand(query, conn);
+                // to insert, update, and delete data.
+                records = selectCommand.ExecuteNonQuery();
+                 
+                conn.Close();
+            }
+            return records;
         }
 
         public int Delete_Entry(string query){

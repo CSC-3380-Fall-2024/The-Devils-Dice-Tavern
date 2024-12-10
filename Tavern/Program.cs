@@ -1,5 +1,6 @@
 using Tavern.Components;
 using Tavern.Data;
+using Blazored.LocalStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddScoped<Database>();
+builder.Services.AddBlazoredLocalStorage();
 builder.Configuration.AddJsonFile("secrets.json",
         optional: true,
         reloadOnChange: true);

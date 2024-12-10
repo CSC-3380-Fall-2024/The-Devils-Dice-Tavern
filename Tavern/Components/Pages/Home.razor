@@ -4,19 +4,17 @@
 
 <div class="mainheader">
     <div class="mainheader-text">
-        <img class="golden-lines"src="/imgs/goldenline.png" alt="Text"/>
-        <h1>Welcome in....</h1>
-        <p>As you enter the Devil's Dice Tavern, you will step into your fantasy, geared to meet your every DnD need.
+        <h1 style="font-size: 64px; padding-top: 70px;">Welcome in....</h1>
+        <p style="word-wrap: break-word; font-size: 32px; padding-top: 120px; padding-bottom: 150px; margin-bottom: 0px;">As you enter the Devil's Dice Tavern, you will step into your fantasy, geared to meet your every DnD need.
             <br/>With our whimsical features and knickknacks galore, the possibilities are endless. 
             <br/>All yee Dungeon Masters and Players alike will leave content and astonished.
         </p>
-        <img class="golden-lines"src="/imgs/goldenline.png" alt="Text"/>
     </div>
 </div>
 <div class="mainbody">
     <div class="mainbody-container">
         <div class="mainbody-text">
-            <h1>Online Shop</h1>
+            <h1 style="font-size: 40px;">Online Shop</h1>
             <p style="word-wrap: break-word; font-size: 20px;"> We have everything you need for your Dungeons and Dragons adventures! From an extensive selection of miniatures and colorful dice to detailed battle maps, our supplies will enhance your gameplay and bring your campaigns to life. Whether you're setting the scene for epic battles or crafting intricate stories, you'll find all the essentials right here to fuel your imagination and elevate your sessions!</p>
             <button type="shop">Shop Now!</button>
         </div>
@@ -29,7 +27,7 @@
             <img class="second-img"src="/imgs/mainimage3.png" alt="Text"/>
         </div>
         <div class="mainbody-text">
-            <h1>Campaigns</h1>
+            <h1 style="font-size: 40px;">Campaigns</h1>
             <p style="word-wrap: break-word; font-size: 20px;"> Managing your D&D campaigns on this website can greatly enhance your organization and storytelling. You can easily keep track of character sheets, session notes, and world-building elements all in one place. The intuitive interface allows you to create and categorize adventures, NPCs, and lore, making it simple to find what you need during sessions.</p>
             <button type="signup">Manage Now!</button>
         </div>
@@ -41,7 +39,7 @@
             <img class="icon"src="/imgs/emailicon.png" alt="Text"/>
         </div>
         <div class="mainfooter-text-placement">
-            <h2>Subscribe to the newsletter and stay connected with our community</h2>
+            <h2 style="word-wrap: break-word; font-size: 40px;">Subscribe to the newsletter and stay connected with our community</h2>
             <div class="mainfooter-button-placement">
                 <button type="newsletter" class="mainfooter-button">Stay Connected!</button>
             </div>
@@ -76,29 +74,10 @@
         background-position: top left;
     }
 
-    .golden-lines {
-        padding: 25px;
-        width: 70%;
-        height: 70%;
-    }
-
     .mainheader-text {
         text-align: center;
         color: white;
         font-family: Baskerville, Arial, Helvetica;
-    }
-
-    .mainheader-text h1 {
-        font-size: 64px;
-        padding-top: 70px;
-    }
-
-    .mainheader-text p {
-        word-wrap: break-word;
-        font-size: 32px;
-        padding-top: 120px; 
-        padding-bottom: 150px;
-        margin-bottom: 0px;
     }
 
     .mainbody {
@@ -111,7 +90,7 @@
     .mainbody-container {
         display: flex;
         align-items: center;
-        justify-content: column;
+        justify-content: center
     }
 
     .mainbody-text {
@@ -121,10 +100,6 @@
         padding-left: 80px;
         padding-right: 80px;
     }
-
-    .mainbody-text h1 {
-            font-size: 2px;
-        }
 
     .first-img {
         padding-top: 100px;
@@ -194,105 +169,6 @@
     .mainfooter-button-placement {
         padding-top: 70px;
         padding-bottom: 50px;
-    }
-
-    @@media (max-width: 375px) {
-        
-        .mainheader-text h1 {
-            font-size: 32px;
-            padding-top: 25px;
-        }
-
-        .mainheader-text p {
-            word-wrap: break-word;
-            font-size: 18px;
-            padding: 25px;
-            margin-bottom: 0px;
-        }
-        
-        .mainbody-text {
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-
-        .mainbody-text h1 {
-            font-size: 35px;
-        }
-
-        .mainbody-container {
-            padding-top: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 60px;
-        }
-        
-        .first-img {
-            padding-top: 25px;
-            padding-bottom: 75px;
-            padding-left: 25px;
-            padding-right: 25px;
-            max-width: 90vw;
-            max-height: auto;
-        }
-    
-        .second-img {
-            padding-top: 25px;
-            padding-bottom: 25px;
-            padding-left: 25px;
-            padding-right: 25px;
-            max-width: 90vw;
-            max-height: auto;
-        }
-        
-        .mainfooter {
-            width: 100%;
-            height: 100%;
-            margin: 0%;
-            padding: 0%;
-            background-image: linear-gradient(rgba(20, 20, 17, 0.50), rgba(20, 20, 17, 0.50)), url("/imgs/mainpagefooter.png");
-            background-repeat: no-repeat;
-            background-size: auto;
-            background-position: top left;
-        }
-
-        .mainfooter-text {
-            text-align: center;
-            color: white;
-        }
-
-        .icon {
-            width: 25vw;
-            height: auto;
-            align: center;
-        }
-
-        .icon-placement {
-            padding-top: 40px;
-        }
-
-        .mainfooter-text-placement {
-            padding-top: 25px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .mainfooter-text-placement h2 {
-            font-size: 25px;
-        }
-
-        .mainfooter-button {
-            width: 225px;
-            height: 70px;
-            font-size: 25px;
-            align: center;
-        }
-
-        .mainfooter-button-placement {
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
     }
 
 </style>

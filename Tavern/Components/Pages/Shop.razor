@@ -1,0 +1,271 @@
+@page "/shop"
+@using System.Data;
+@using System.Runtime.CompilerServices;
+@using Tavern.Data;
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+@using Blazored.LocalStorage;
+@inject Database dbAccess
+@inject ILocalStorageService storeButton
+@rendermode InteractiveServer
+
+<PageTitle>Shop</PageTitle>
+
+<div class="shopheader">
+    <div style="padding-left: 1350px;">
+        <a href="about"><img class="icon" src="/imgs/cart.png" alt="Text"/></a>
+    </div>
+    <div class="shopheader-text">
+        <h1 style="font-size: 128px; padding-top: 165px; padding-bottom: 250px; margin-bottom: 0rem;">Shop</h1>
+    </div>
+</div>
+<div class="shopbody">
+    <div class="shop-filters">
+        <button class="@buttonState(1)" @onclick="() => selectButton(1, 'a')" style="background-image: url('/imgs/dice.png');
+                                                                                background-repeat: no-repeat; 
+                                                                                background-position: center;
+                                                                                background-size: cover;">Dice</button>
+        <button class="@buttonState(2)" @onclick="() => selectButton(2, 'b')" style="background-image: url('/imgs/map.png');
+                                                                                background-repeat: no-repeat; 
+                                                                                background-position: center;
+                                                                                background-size: cover;">Maps</button>
+        <button class="@buttonState(3)" @onclick="() => selectButton(3, 'c')" style="background-image: url('/imgs/miniature.png');
+                                                                                background-repeat: no-repeat; 
+                                                                                background-position: center;
+                                                                                background-size: cover;">Minis</button>
+        <button class="@buttonState(4)" @onclick="() => selectButton(4, 'd')" style="background-image: url('/imgs/cosplay.png');
+                                                                                background-repeat: no-repeat; 
+                                                                                background-position: center;
+                                                                                background-size: cover;">Cosplay</button>
+        <button class="@buttonState(5)" @onclick="() => selectButton(5, 'e')" style="background-image: url('/imgs/misc.png');
+                                                                                background-repeat: no-repeat; 
+                                                                                background-position: center;
+                                                                                background-size: cover;">Misc</button>
+    </div>
+    <div class="items-container">
+
+        <!--Replace Contents Later with button generation code based on number of search query results>-->
+        @if (items.Count > 0 || getItems != null) {
+            foreach (Product view in items) {
+                        string name = view.Item_Name;
+                        string price = view.Price.ToString();
+                        string link = view.Image;
+                        string pk = view.Product_ID;
+                        <div class="d-flex flex-column" style="padding:50px 50px;">
+                            <a href="/Shop/@pk">
+                            <button style="background: url(@link); 
+                                           background-repeat: no-repeat; 
+                                           background-position: center;
+                                           background-size: cover;
+                                           width:400px;
+                                           height:300px;"
+                                    onclick="()=> Naviagte(@pk)"></button>
+                            </a>
+                            <p style="text-align:center; color:white;font-size: 30px;">@name</p>
+                            <p style="text-align:center;color:white;font-size: 30px;">$@price</p>
+                        </div>
+            }
+        } else {
+            <p style="justify-content: center; font-size: 40;">No Results</p>
+        }
+    </div>
+</div>
+
+<style>
+    * {
+        font-family: Baskerville,Arial, Helvetica;
+    }
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .shopheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.2), rgba(20, 20, 17, 1)), url("/imgs/shopbanner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .shopheader-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville;
+    }   
+
+    .shopbody {
+        position: relative; 
+        background-image: linear-gradient(0deg, #505050 0%, #505050 100%), 
+                    radial-gradient(100.00% 100.00%, rgba(0, 0, 0, 0) 67%,
+                    rgba(0, 0, 0, 0.15) 100%), url("/imgs/jane_doe.jpg");
+    }
+
+    .shop-filters {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        padding-top: 30px;
+    }
+
+    .shop-filters button {
+        width: 200px;
+        height: 200px;
+        border-radius: 30px;
+        font-family: Baskerville;
+        color: white;
+        display: flex;
+        border-color: transparent;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+        background: rgba(0, 0, 0, 0.2);
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover;
+    }
+
+    .shop-filters button.selected {
+        color: white;
+        font-size: 60px;
+        transform: scale(1.1);
+    }
+
+    .shop-filters button.deselected {
+        font-size: 30px;
+        color: white;
+    }
+
+    .items-container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-text {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+</style>
+
+@code {
+    private int? selectedButton { get; set; } = -1;
+    DataTable getItems = new DataTable();
+    List<Product> items = new List<Product>();
+    private bool isPrerendering { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        isPrerendering = false;
+
+        getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product");
+        foreach (DataRow row in getItems.Rows) {
+
+            Product add = new Product {
+                Product_ID = row["Product_ID"].ToString(),
+                Item_Type = row["Item_Type"].ToString(),
+                Price = Convert.ToDouble(row["Price"]),
+                Item_Name = row["Item_Name"].ToString(),
+                Image = row["Image"].ToString(),
+                Item_Desc = row["Item_Desc"].ToString(),
+                Stock_num = Convert.ToInt32(row["Stock_num"]),
+                Color = row["Color"].ToString()
+            };
+            items.Add(add);
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !isPrerendering)
+        {
+            var getSelection = await storeButton.GetItemAsync<int>("filterSelection");
+            selectedButton = getSelection != null ? getSelection : -1;
+
+            StateHasChanged();
+        }
+    }
+
+    public async Task selectButton(int buttonNumber, char query) {
+        items.Clear();
+        if (selectedButton == buttonNumber) {
+            selectedButton = -1;
+            getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product");
+            foreach (DataRow row in getItems.Rows) {
+
+                Product add = new Product {
+                    Product_ID = row["Product_ID"].ToString(),
+                    Item_Type = row["Item_Type"].ToString(),
+                    Price = Convert.ToDouble(row["Price"]),
+                    Item_Name = row["Item_Name"].ToString(),
+                    Image = row["Image"].ToString(),
+                    Item_Desc = row["Item_Desc"].ToString(),
+                    Stock_num = Convert.ToInt32(row["Stock_num"]),
+                    Color = row["Color"].ToString()
+                };
+
+                items.Add(add);
+            }
+        }
+        else {
+            selectedButton = buttonNumber;
+
+            switch(query){
+                case 'a':
+                    getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product WHERE Item_Type = 'dice'");
+                    break;
+                case 'b':
+                    getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product WHERE Item_Type = 'map'");
+                    break;
+                case 'c':
+                    getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product WHERE Item_Type = 'mini'");
+                    break;
+                case 'd':
+                    getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product WHERE Item_Type = 'cosplay'");
+                    break;
+                default:
+                    getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product WHERE Item_Type = 'misc'");
+                    break;
+            }
+
+            foreach (DataRow row in getItems.Rows) {
+
+                Product add = new Product {
+                    Product_ID = row["Product_ID"].ToString(),
+                    Item_Type = row["Item_Type"].ToString(),
+                    Price = Convert.ToDouble(row["Price"]),
+                    Item_Name = row["Item_Name"].ToString(),
+                    Image = row["Image"].ToString(),
+                    Item_Desc = row["Item_Desc"].ToString(),
+                    Stock_num = Convert.ToInt32(row["Stock_num"]),
+                    Color = row["Color"].ToString()
+                };
+
+                items.Add(add);
+            }
+        }
+
+        await storeButton.SetItemAsync("filterSelection", selectedButton);
+        StateHasChanged();
+    }
+
+    private string buttonState(int buttonNumber)
+    {
+        return selectedButton == buttonNumber ? "selected" : "deselected";
+    }
+    public bool isChecked(int value) => value == selectedButton;
+}

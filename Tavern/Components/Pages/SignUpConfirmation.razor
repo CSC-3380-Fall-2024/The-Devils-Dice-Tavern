@@ -1,0 +1,80 @@
+@page "/SignUpConfirmation"
+<PageTitle>SignUpConfirmation</PageTitle>
+    <title>Devil's Dice Tavern - Sign Up Confirmation</title>
+<div class="centering">
+    <div class="confirmation-container">
+        <h2>Thank You for Signing Up!</h2>
+        <p>Your account has been successfully created.</p>
+        <p>Welcome to the Devil's Dice Tavern! You can now start exploring our world.</p>
+        <button>
+            <a href="/Login" class="button-link">Log In</a>
+        </button>
+        <button>
+            <a href="/" class="button-link">Return to Home</a>
+        </button>
+    </div>
+</div>
+<style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("/imgs/signup_background3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        height: 100%;
+        overscroll-behavior: none;
+    }
+    .centering {
+        padding-left: 500px;
+    }
+    .mainheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-repeat: no-repeat;
+        color: #333;
+        background-size: cover;
+        background-position: top left;
+    }
+      .mainheader-text {
+        text-align: center;
+        color: #333;
+        font-family: Baskerville, Arial, Helvetica;
+
+    }
+    .confirmation-container {
+        width: 300px;
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 30px;
+        background-image: url("/imgs/Scrolls/scroll.png");
+        background-repeat: no-repeat;
+        color: #5c4033;
+        background-size: cover;
+        background-position: top left;
+        text-align: center;
+        align-items: center;
+    }
+    .confirmation-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .confirmation-container button:hover {
+        background-color: #555;
+    }
+    .confirmation-container .login-link {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+</style>

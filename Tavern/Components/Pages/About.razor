@@ -1,0 +1,283 @@
+@page "/about"
+
+<PageTitle>About Us</PageTitle>
+
+<div class="aboutheader">
+    <div class="aboutheader-text">
+        <h1 style="font-size: 128px; padding-top: 165px; padding-bottom: 250px; margin-bottom: 0rem;">About Us</h1>
+    </div>
+</div>
+<div class="aboutbody">
+    <div class="aboutbody-container">
+        <div class="aboutbody-text">
+            <h1 style="font-size: 40px;">Who Are We?</h1>
+            <p style="word-wrap: break-word; font-size: 20px;"> We're a passionate community of creators, storytellers, and adventurers dedicated to bringing the fantasy realm to life. Our shop proudly partners with small businesses and independent artisans to offer unique, handcrafted items that enhance your gaming experience. From custom dice to one-of-a-kind miniatures, we believe in supporting creativity and collaboration, so you can bring your wildest adventures to the table. Plus, with our built-in Campaign Manager, planning and tracking your D&D sessions has never been easier. Join us in crafting unforgettable tales and building a world where imagination knows no bounds!</p>
+        </div>
+        <div>
+            <img class="about-img"src="/imgs/about_body.png" alt="Text"/>
+        </div>
+    </div>
+    <div>
+        <div class="team-header">
+            <h1 style="font-size: 64px; font-style: bold; padding-bottom: 35px;">Meet the Team</h1>
+        </div>
+        <div class="aboutbody-container team-bg">
+            <div>
+                <img class="team-img"src="/imgs/team_kye.png" alt="Text"/>
+                <h2 class="team-text">Kyla Abshire</h2>
+                <h3 class="team-text team-pad">Communications Lead</h3>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/team_kris.jpg" alt="Text"/>
+                <h2 class="team-text">Kristen Averett</h2>
+                <h3 class="team-text team-pad">QA Tester</h3>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/team_gabby.jpg" alt="Text"/>
+                <h2 class="team-text">Gabrielle King</h2>
+                <h3 class="team-text team-pad">Git Master</h3>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/team_cass.jpg" alt="Text"/>
+                <h2 class="team-text">Cassidy McDonald</h2>
+                <h3 class="team-text team-pad">Project Manager</h3>
+            </div>
+            <div>
+                <img class="team-img2"src="/imgs/team_maycie.jpg" alt="Text"/>
+                <h2 class="team-text">Maycie Pinell</h2>
+                <h3 class="team-text team-pad">Design Lead</h3>
+            </div>
+        </div>
+    </div>
+    <div class="line"/>
+    <div class="partners-container">
+        <div class="partner-header">
+            <h1 style="font-size: 64px; font-style: bold;">Sponsors and Partners</h1>
+            <h3 style="word-wrap: break-word; padding-bottom: 75px;">We partner with humble, trusting, small businesses that think creatively. Artists and creators who believe in the products they’re making, embrace their work, and want to foster a community to advocate for expression.</h3>
+        </div>
+        <div class="partnerbody-container">
+            <div>
+                <img class="team-img"src="/imgs/cyberX.png" alt="Text"/>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/ceylonX.png" alt="Text"/>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/imaginX.png" alt="Text"/>
+            </div>
+            <div>
+                <img class="team-img"src="/imgs/kodeX.png" alt="Text"/>
+            </div>
+            <div>
+                <img class="team-img2"src="/imgs/zeuX.png" alt="Text"/>
+            </div>
+        </div>
+    </div>
+    <div class="line"/>
+</div>
+<div class="aboutfooter">
+    <div class="aboutfooter-text">
+        <div class="icon-placement">
+            <img class="icon"src="/imgs/emailicon.png" alt="Text"/>
+        </div>
+        <div class="aboutfooter-text-placement">
+            <h2 style="word-wrap: break-word; font-size: 40px;">Subscribe to the newsletter and stay connected with our community</h2>
+            <div class="aboutfooter-button-placement">
+                <button type="newsletter" class="aboutfooter-button">Stay Connected!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        height: 100%;
+        overscroll-behavior: none;
+    }
+    .aboutheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.2), rgba(20, 20, 17, 1)), url("/imgs/aboutus_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .aboutheader-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville, Arial, Helvetica;
+    }   
+
+    .about-img {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 100px;
+        max-width: 800px;
+        max-height: 600px;
+    }
+
+    .aboutbody {
+        position: relative; 
+        background-image: linear-gradient(0deg, #505050 0%, #505050 100%), 
+                    radial-gradient(100.00% 100.00%, rgba(0, 0, 0, 0) 67%,
+                    rgba(0, 0, 0, 0.15) 100%), url("/imgs/jane_doe.jpg");
+    }
+
+    .aboutbody-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutbody-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville, Arial, Helvetica;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .team-img {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 300px;
+        max-height: 600px;
+    }
+
+    .team-img2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 30px;
+        max-width: 275px;
+        max-height: 500px;
+    }
+
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .team-header {
+        text-align: center;
+        color: white;
+        font-family: Baskerville, Arial, Helvetica;
+    }
+
+    .team-bg {
+        background: radial-gradient(circle, #4C0200, #320100, #1A0000);
+        opacity: 75%;
+    }
+
+
+    .team-text {
+        text-align: center;
+        font-family: Baskerville;
+        color: white;
+    }
+
+    .team-pad {
+        padding-bottom: 25px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1.5px;
+        background-color: black;
+        opacity: .2;
+    }
+
+    .partner-header {
+        text-align: center;
+        color: white;
+        font-family: Baskerville, Arial, Helvetica;
+        padding-top: 75px;
+    }
+
+    .partners-container {
+        /*background:
+            linear-gradient(to bottom, 
+            rgba(0, 0, 0, 0) 20%, 
+            rgba(0, 0, 0, 0.8) 40%, 
+            rgba(0, 0, 0, 0.8) 60%, 
+            rgba(0, 0, 0, 0) 80%),
+            #4C0200;*/
+        width: auto;
+        opacity: 0.75;
+        height: 50%;
+        padding-bottom: 100px;
+    }
+
+    .partnerbody-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle, #4C0200, #320100, #1A0000);
+        opacity: 100%;
+    }
+
+     .aboutfooter {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: linear-gradient(rgba(20, 20, 17, 0.50), rgba(20, 20, 17, 0.50)), url("/imgs/mainpagefooter.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+    }
+
+    .aboutfooter-text {
+        text-align: center;
+        color: white;
+        font-family: Baskerville, Arial, Helvetica;
+    }
+
+    .icon {
+        width: 150px;
+        height: 150px;
+        align: center;
+    }
+
+    .icon-placement {
+        padding-top: 40px;
+    }
+
+    .aboutfooter-text-placement {
+        padding-top: 50px;
+    }
+
+    .aboutfooter-button {
+        width: 250px;
+        height: 80px;
+        font-size: 30px;
+        align: center;
+        
+    }
+
+    .aboutfooter-button-placement {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+</style>

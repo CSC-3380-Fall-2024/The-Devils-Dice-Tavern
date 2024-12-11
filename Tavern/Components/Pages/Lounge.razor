@@ -1,0 +1,228 @@
+@page "/TheLounge"
+
+@inherits LayoutComponentBase
+
+<PageTitle>TheLounge</PageTitle>
+<div class="page">
+    <article class="lounge-page">
+        <h1 class="lounge-title">The Lounge</h1>
+        
+        <div class="create-post">
+            <a href="CreatePost" class="button">Create New Post</a>
+        </div>
+
+        <div class="posts-list">
+        
+            @foreach (Post view in posts) {
+                
+                <div class="post-card">
+                
+                <div class="post-image">
+
+                    @if (view.optionalLink!= null) {
+
+                        <img src="@view.optionalLink" alt="DIY Resin Dragon Horns" class="post-expand-btn" data-post="dragonHorns" />
+
+                    } 
+                    
+                </div>
+                <div class="post-info">
+                    <div class="post-title">
+                        <h2 class="post-expand-btn" data-post="dragonHorns">DIY Resin Dragon Horns</h2>
+                    </div>
+                    <div class="post-meta">
+                        <span>Posted by: The Crafter</span>
+                    </div>
+                    <div class="post-content" id="dragonHorns" style="display: none;">
+                        <h3>Description:</h3>
+                        <p>Create your very own **Resin Dragon Horns** with this DIY tutorial! Whether for cosplay, decor, or just for fun, these horns will add a mythical touch to any room.</p>
+
+                        <h3>Materials Needed:</h3>
+                        <ul>
+                            <li><strong>Resin</strong> (clear epoxy resin)</li>
+                            <li><strong>Silicone Mold</strong> (or DIY clay mold)</li>
+                            <li><strong>Resin Pigments</strong> (red, black, or gold)</li>
+                            <li><strong>Gloves</strong></li>
+                            <li><strong>Mixing Cups and Stir Sticks</strong></li>
+                            <li><strong>Crafting Wire</strong> (for structure)</li>
+                            <li><strong>Fine Sandpaper</strong></li>
+                            <li><strong>Clear Resin Sealer</strong></li>
+                        </ul>
+
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Prepare your workspace by covering surfaces and putting on gloves.</li>
+                            <li>Prepare your mold: either use a silicone mold or sculpt your own out of clay.</li>
+                            <li>Mix the resin and add pigments for color.</li>
+                            <li>Pour resin into the mold, layering as needed. Optionally, insert crafting wire for added strength.</li>
+                            <li>Allow the resin to set for 24-48 hours, then unmold and sand smooth.</li>
+                            <li>Paint and detail your dragon horns for extra flair.</li>
+                            <li>Seal with clear resin sealer for a glossy finish.</li>
+                            <li>Display or wear your dragon horns!</li>
+                        </ol>
+
+                        <h3>Tavern Tip:</h3>
+                        <p>Add LED lights inside your horns for an extra magical glow. Just drill small holes and fit the lights inside!</p>
+                    </div>
+                </div>
+            </div>
+            }
+
+        </div>
+    </article>
+</div>
+
+<style>
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        height: 100%;
+        overscroll-behavior: none;
+    }
+    .page {
+        background-image: url('https://wallpapercave.com/wp/wp2361283.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: Baskerville, Arial, Helvetica;
+    }
+    .lounge-page {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .lounge-title {
+        font-size: 32px;
+        sfont-family: Baskerville, Arial, Helvetica;
+        color: #246153;
+        margin-bottom: 20px;
+    }
+
+    .create-post {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    /* White container for the posts */
+    .posts-container {
+        background-image: url('https://th.bing.com/th/id/OIP.It_mLJgT7vasBABR4eGeTwHaIc?w=143&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+    }
+
+    .posts-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .post-card {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .post-thumbnail {
+        margin-bottom: 15px;
+    }
+
+    .post-thumbnail-img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .post-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #246153;
+        cursor: pointer;
+    }
+
+    .post-meta {
+        font-size: 14px;
+        color: #888;
+    }
+
+    .post-image img {
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .post-content {
+        margin-top: 20px;
+    }
+
+    /* Styling for hidden post content */
+    .post-content {
+        display: none;
+    }
+
+    .post-expand-btn:hover {
+        text-decoration: underline;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+</style>
+
+<script>
+    document.querySelectorAll('.post-expand-btn').forEach(item => {
+        item.addEventListener('click', function() {
+            const postId = item.getAttribute('data-post');
+            const content = document.getElementById(postId);
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        });
+    });
+</script>
+@code {
+
+    DataTable getItems = new DataTable();
+    List<Post> posts = new List<Post>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Forum");
+        foreach (DataRow row in getItems.Rows) {
+
+            Post add = new Post {
+                Forum_ID = row["Forum_ID"].toString();
+                optionalLink = row["optionalLink"].toString() == null ? null : row["optionalLink"].toString();
+                postUser = row["postUser"].toString();
+                title = row["title"].toString();
+                category = row["category"].toString();
+                description = row["description"].toString();
+                createdAt = row["createdAt"].toString();
+            };
+            items.Add(add);
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@page "/Newsletter"
+@using Tavern.Data
+
+<PageTitle>Newsletter</PageTitle>
+<div class="centering">
+    <div class="newsletter-container">
+        <h2>Get Newsletter</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- API Implementation -->
+            <input type="hidden" name="access_key" value="c508243c-7955-4d62-b5d3-1382b39a7027">
+            <!-- API Honepot Spam Protection -->
+            <!--<input type="checkbox" name="botcheck" class="hidden" style="display: none;")-->
+            <!-- Create a custom subject line based on user's input -->
+            <input type="hidden" name="subject" value="Thanks for subscribing to our newsletter ${name}!">
+
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name" @bind="Name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" @bind="Email" required>
+            <!--Message area: added for troubleshooting, should delete later-->
+            <!--<textarea name="message" required></textarea>-->
+
+            <a href="/Newsletter_Confirmation">
+                <button type="submit">Submit</button>
+            </a>
+        </form>
+    </div> 
+</div>
+
+<style>
+    html, body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("/imgs/newsletter_background_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    html {
+    overflow: hidden;
+    height: 100%;
+    }
+
+    body {
+    overflow: auto;
+    height: 100%;
+    overscroll-behavior: none;
+    }
+    .centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    }
+    .mainheader {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-repeat: no-repeat;
+    color: #333;
+    background-size: cover;
+    using System.Xml.Serialization;
+    background-position: top left;
+    }
+    .mainheader-text {
+    text-align: center;
+    using Microsoft.AspNetCore.Http.Metadata;
+    color: #333;
+    font-family: Baskerville, Arial, Helvetica;
+
+    }
+    .newsletter-container {
+    width: 300px;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background-image: url("/imgs/Scrolls/scroll.png");
+    background-repeat: no-repeat;
+    color: #5c4033;
+    background-size: cover;
+    background-position: top left;
+    text-align: center;
+    align-items: center;
+    }
+    .newsletter-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    .newsletter-container p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .newsletter-container input[type="name"],
+    .newsletter-container input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #5c4033;
+        border-radius: 5px;
+        background-color: #f8f4e9;
+  
+    .newsletter-container button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .newsletter-container button:hover {
+    background-color: #555;
+    }
+    .newsletter-container .newsletter-link {
+    margin-top: 10px;
+    font-size: 14px;
+    }
+
+</style>
+
+@code{
+    Database db = new Database();
+    private string Name { get; set; }
+    private string Email { get; set; }
+
+    private void SubmitForm()
+    {
+        Console.WriteLine($"Name: {Name}, Email: {Email}"); // Debugging: Check values
+        string query = "INSERT INTO NewsletterRecipient (Newsletter_ID, Name, Email) VALUES ('N1', '"+ Name + "', '"+ Email + "');";
+        Console.WriteLine(query); // Debugging: Print the query
+        db.Add_Entry(query);
+    }
+
+}

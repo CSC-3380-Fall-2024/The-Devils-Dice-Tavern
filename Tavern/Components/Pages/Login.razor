@@ -1,0 +1,160 @@
+@page "/Login"
+@using System.Data;
+@using System.Runtime.CompilerServices;
+@using Tavern.Data;
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+@using Blazored.LocalStorage;
+@inject Database dbAccess
+@inject ILocalStorageService storeButton
+@rendermode InteractiveServer
+
+<PageTitle>Login</PageTitle>
+<div class="centering">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username or email">Username or Email Address</label>
+            <input @bind="userTest" type="text" id="username or email" name="username or email" required>
+
+            <label for="password">Password</label>
+            <input @bind="passTest" type="password" id="password" name="password" required>
+
+            <p><a href="/ForgotPassword">Forgot your password?</a></p>
+            <p><a href="/SignUp">Don't have an account? Sign Up here!</a></p>
+            <p>@state</p>
+
+        <button type="submit" @onclick="()=> tryLogin()">Submit</button>
+        </form>
+    </div> 
+</div>
+<style>
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url("/imgs/signup_background2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    body {
+        overflow: auto;
+        height: 100%;
+        overscroll-behavior: none;
+    }
+    .centering {
+        padding-left: 500px;
+    }
+    .mainheader {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-repeat: no-repeat;
+        color: #333;
+        background-size: cover;
+        background-position: top left;
+    }
+      .mainheader-text {
+        text-align: center;
+        color: #333;
+        font-family: Baskerville, Arial, Helvetica;
+    }
+    .login-container {
+        width: 300px;
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 30px;
+        background-image: url("https://raw.githubusercontent.com/CSC-3380-Fall-2024/The-Devils-Dice-Tavern/refs/heads/dev/Tavern/wwwroot/imgs/Scrolls/Vector.png");
+        background-repeat: no-repeat;
+        color: #5c4033;
+        background-size: cover;
+        background-position: top left;
+        text-align: center;
+        align-items: center;
+    }
+    .login-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #5c4033;
+        border-radius: 5px;
+        background-color: #f8f4e9;
+  }
+    .login-container button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .login-container button:hover {
+        background-color: #555;
+    }
+    .login-container .login-link {
+         margin-top:  5px 10px;
+        font-size: 14px;
+    }
+</style>
+
+
+@code {
+
+    private string userTest { get; set; } = string.Empty;
+    private string passTest { get; set; } = string.Empty;
+    private string state { get; set; }
+
+    DataTable getItems = new DataTable();
+    List<UserStore> login = new List<UserStore>();
+
+    [Inject] NavigationManager Navigation { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Users");
+        foreach (DataRow row in getItems.Rows) {
+
+            UserStore add = new UserStore {
+                User_ID = row["User_ID"].ToString(),
+                First_Name = row["First_Name"].ToString(),
+                Last_name = row["Last_name"].ToString(),
+                Username = row["Username"].ToString(),
+                User_Password = row["User_Password"].ToString(),
+                Email = row["Email"].ToString()
+            };
+            login.Add(add);
+        }
+    }
+
+    private void tryLogin()
+    {
+        foreach (UserStore check in login)
+        {
+            if ((String.Equals(userTest, check.Email, StringComparison.OrdinalIgnoreCase) || String.Equals(userTest, check.User_ID, StringComparison.OrdinalIgnoreCase)) && passTest.Equals(check.User_Password))
+            {
+                Environment.SetEnvironmentVariable("userLogin", "true");
+                Environment.SetEnvironmentVariable("usersName", check.First_Name);
+                Environment.SetEnvironmentVariable("userID", check.User_ID);
+
+                state = "login successful";
+                return;
+            }
+        }
+
+        state = "Invalid login attempt. Please try again.";
+    }
+}

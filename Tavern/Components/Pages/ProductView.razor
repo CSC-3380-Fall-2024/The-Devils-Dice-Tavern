@@ -1,0 +1,109 @@
+@page "/Shop/{product}"
+@using System.Data;
+@using System.Runtime.CompilerServices;
+@using Tavern.Data;
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+@using Blazored.LocalStorage;
+@inject Database dbAccess
+@rendermode InteractiveServer
+
+<PageTitle>Test</PageTitle>
+
+<div class="product-view">
+    <div style="padding-left: 1350px;">
+        <a href="about"><img class="icon" src="/imgs/cart.png" alt="Text"/></a>
+    </div>
+    <div class="items-container">
+       <div>
+            <img class="display" src="@items.ElementAt(0).Image" alt="Text"/>
+       </div>
+       <div class="info-text">
+            <p>@items.ElementAt(0).Item_Name</p>
+            <p>$@items.ElementAt(0).Price</p>
+            <p>@items.ElementAt(0).Color - @items.ElementAt(0).Stock_num in stock</p>
+            <p style="text-wrap: balance;">@items.ElementAt(0).Item_Desc</p>
+            <button class="button-style">Add to Cart</button>
+       </div>
+    </div>
+</div>
+
+<style>
+    * {
+        font-family: Baskerville,Arial, Helvetica;
+    }
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .product-view {
+        padding: top 75px;
+        position: relative; 
+        background-image: linear-gradient(0deg, #505050 0%, #505050 100%), 
+                    radial-gradient(100.00% 100.00%, rgba(0, 0, 0, 0) 67%,
+                    rgba(0, 0, 0, 0.15) 100%), url("/imgs/jane_doe.jpg");
+    }
+
+    .items-container {
+        padding-left: 125px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 100px;
+    }
+
+    .display {
+        width: 400px;
+        height: 400px;
+    }
+
+    .info-text {
+        color:white;
+        font-size: 30px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .button-style {
+        background: radial-gradient(circle, #4C0200, #320100, #1A0000);
+        padding:10px 10px 10px 10px;
+        color:white;
+    }
+
+</style>
+
+@code {
+    [Parameter]
+    public string product {get; set;}
+
+    DataTable getItems = new DataTable();
+    List<Product> items = new List<Product>();
+
+    protected override async Task OnInitializedAsync() {
+
+        getItems = dbAccess.MySQLConnection_Datatable($"SELECT * FROM Product WHERE Product_ID = '{product}'");
+        foreach (DataRow row in getItems.Rows) {
+
+            Product add = new Product {
+                Product_ID = row["Product_ID"].ToString(),
+                Item_Type = row["Item_Type"].ToString(),
+                Price = Convert.ToDouble(row["Price"]),
+                Item_Name = row["Item_Name"].ToString(),
+                Image = row["Image"].ToString(),
+                Item_Desc = row["Item_Desc"].ToString(),
+                Stock_num = Convert.ToInt32(row["Stock_num"]),
+                Color = row["Color"].ToString()
+            };
+            items.Add(add);   
+        }
+    }
+
+    /*private void addToCart() {
+        Match removeAlpha = Regex.Match(Product_ID, "\\d+");
+        int newPKVal = Convert.ToInt32(removeAlpha.Value) + 1;
+    }*/
+}

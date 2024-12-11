@@ -1,5 +1,5 @@
 namespace Tavern.Data {
-    public class Users
+    public class UserStore
     {
         public required string User_ID {get; set;}
         public string? First_Name {get; set;}

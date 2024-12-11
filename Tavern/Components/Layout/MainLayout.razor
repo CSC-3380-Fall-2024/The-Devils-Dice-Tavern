@@ -13,7 +13,12 @@
                     <li><a href="Newsletter">Newsletter</a></li>
                     <li><a href="TheLounge">The Lounge</a></li>                    
                     <li><a href="Campaign">Campaign Manager</a></li>
-                    <li><a href="Login">Login</a></li>
+                    @if (!Convert.ToBoolean(Environment.GetEnvironmentVariable("userLogin"))) {
+                        <li><a href="Login">Login</a></li>
+                    } else {
+                        <li><a>Welcome, @usersName</a></li>
+                    }
+                    
                 </ul>
             </div>
         </div>
@@ -128,3 +133,10 @@ ul {
 }
 
 </style>
+
+@code {
+
+    string usersName = Environment.GetEnvironmentVariable("usersName");
+
+
+}

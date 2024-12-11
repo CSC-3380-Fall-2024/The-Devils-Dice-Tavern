@@ -12,50 +12,19 @@
         </div>
 
         <div class="posts-list">
-            <div class="post-card food-post">
-               
-                <div class="post-image">
-                    <img src="https://i.pinimg.com/736x/08/a6/59/08a659bafbdf0b6a6bb42e009f858bca.jpg" alt="Potion of Strength" class="post-expand-btn" data-post="potionStrength" />
-                </div>
-                <div class="post-info">
-                    <div class="post-title">
-                        <h2 class="post-expand-btn" data-post="potionStrength">Potion of Strength</h2>
-                    </div>
-                    <div class="post-meta">
-                        <span>Posted by: The Alchemist</span>
-                    </div>
-                    <div class="post-content" id="potionStrength" style="display: none;">
-                        <h3>Description:</h3>
-                        <p>Boost your strength and energy with this powerful **Potion of Strength**! Perfect for adventurers heading into battle, this brew will give you the extra push you need.</p>
-
-                        <h3>Ingredients:</h3>
-                        <ul>
-                            <li><strong>Dragon's Blood Extract</strong></li>
-                            <li><strong>Wolfberry Berries</strong></li>
-                            <li><strong>Essence of Power Root</strong></li>
-                            <li><strong>Moonlight Dew</strong></li>
-                            <li><strong>Grindstone Powder</strong></li>
-                        </ul>
-
-                        <h3>Instructions:</h3>
-                        <ol>
-                            <li>Combine the Dragon's Blood and Wolfberries in a cauldron, heating gently.</li>
-                            <li>Add the Essence of Power Root and Moonlight Dew to the mixture.</li>
-                            <li>Let it brew under the full moon for 3 hours.</li>
-                            <li>Finally, mix in the Grindstone Powder to give it its magical strength-boosting properties.</li>
-                            <li>Once completed, the potion should glow a vibrant red. Drink for instant strength boost!</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-card diy-post">
-                <div class="post-thumbnail">
-                    <img src="imgs/diy-resin-dragon-horns-thumbnail.jpg" alt="DIY Resin Dragon Horns Thumbnail" class="post-thumbnail-img" />
-                </div>
+        
+            @foreach (Post view in posts) {
+                
+                <div class="post-card">
                 
                 <div class="post-image">
-                    <img src="imgs/diy-resin-dragon-horns.jpg" alt="DIY Resin Dragon Horns" class="post-expand-btn" data-post="dragonHorns" />
+
+                    @if (view.optionalLink!= null) {
+
+                        <img src="@view.optionalLink" alt="DIY Resin Dragon Horns" class="post-expand-btn" data-post="dragonHorns" />
+
+                    } 
+                    
                 </div>
                 <div class="post-info">
                     <div class="post-title">
@@ -97,51 +66,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="post-card food-post">
-                <div class="post-thumbnail">
-                    <img src="imgs/goblin-stew-thumbnail.jpg" alt="Goblin Stew Thumbnail" class="post-thumbnail-img" />
-                </div>
-                
-                <div class="post-image">
-                    <img src="imgs/goblin-stew.jpg" alt="Goblin Stew" class="post-expand-btn" data-post="goblinStew" />
-                </div>
-                <div class="post-info">
-                    <div class="post-title">
-                        <h2 class="post-expand-btn" data-post="goblinStew">Goblin Stew</h2>
-                    </div>
-                    <div class="post-meta">
-                        <span>Posted by: The Chef</span>
-                    </div>
-                    <div class="post-content" id="goblinStew" style="display: none;">
-                        <h3>Description:</h3>
-                        <p>Get ready for a hearty and wild meal with **Goblin Stew**! A recipe passed down through generations, it’s a favorite for adventurers who need a filling meal before setting out.</p>
-
-                        <h3>Ingredients:</h3>
-                        <ul>
-                            <li><strong>1 lb Goblin Meat</strong> (or substitute with beef or pork)</li>
-                            <li><strong>5 Large Mushrooms</strong> (sliced)</li>
-                            <li><strong>3 Carrots</strong> (diced)</li>
-                            <li><strong>1 Onion</strong> (chopped)</li>
-                            <li><strong>2 Cups of Broth</strong> (beef or vegetable)</li>
-                            <li><strong>Seasoning:</strong> Salt, pepper, thyme, and bay leaves</li>
-                        </ul>
-
-                        <h3>Instructions:</h3>
-                        <ol>
-                            <li>In a large pot, cook the goblin meat until browned (or use your preferred substitute).</li>
-                            <li>Add the onions and cook until softened.</li>
-                            <li>Stir in the carrots, mushrooms, and seasoning. Cook for a few minutes.</li>
-                            <li>Pour in the broth and bring to a simmer.</li>
-                            <li>Cover and cook for 45 minutes or until the vegetables are tender and the stew is flavorful.</li>
-                            <li>Serve with warm bread and enjoy!</li>
-                        </ol>
-
-                        <h3>Tavern Tip:</h3>
-                        <p>For an extra kick, add a dash of hot sauce or chili flakes to spice up your stew!</p>
-                    </div>
-                </div>
-            </div>
+            }
 
         </div>
     </article>
@@ -277,3 +202,27 @@
         });
     });
 </script>
+@code {
+
+    DataTable getItems = new DataTable();
+    List<Post> posts = new List<Post>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Forum");
+        foreach (DataRow row in getItems.Rows) {
+
+            Post add = new Post {
+                Forum_ID = row["Forum_ID"].toString();
+                optionalLink = row["optionalLink"].toString() == null ? null : row["optionalLink"].toString();
+                postUser = row["postUser"].toString();
+                title = row["title"].toString();
+                category = row["category"].toString();
+                description = row["description"].toString();
+                createdAt = row["createdAt"].toString();
+            };
+            items.Add(add);
+        }
+    }
+}

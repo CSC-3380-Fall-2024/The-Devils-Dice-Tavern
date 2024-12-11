@@ -47,7 +47,10 @@
     overscroll-behavior: none;
     }
     .centering {
-    padding-left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
     }
     .mainheader {
     width: 100%;
@@ -85,7 +88,10 @@
     font-size: 24px;
     margin-bottom: 20px;
     }
-
+    .newsletter-container p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
     .newsletter-container input[type="name"],
     .newsletter-container input[type="email"] {
         width: 100%;
@@ -94,15 +100,15 @@
         border: 1px solid #5c4033;
         border-radius: 5px;
         background-color: #f8f4e9;
-  }
+  
     .newsletter-container button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
     }
     .newsletter-container button:hover {
     background-color: #555;

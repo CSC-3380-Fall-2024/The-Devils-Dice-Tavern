@@ -1,6 +1,6 @@
 @page "/shop"
 @using System.Data;
-@using System.Runtime.CompilerServices
+@using System.Runtime.CompilerServices;
 @using Tavern.Data;
 @using Microsoft.AspNetCore.Components;
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
@@ -12,6 +12,9 @@
 <PageTitle>Shop</PageTitle>
 
 <div class="shopheader">
+    <div style="padding-left: 1350px;">
+        <a href="about"><img class="icon" src="/imgs/cart.png" alt="Text"/></a>
+    </div>
     <div class="shopheader-text">
         <h1 style="font-size: 128px; padding-top: 165px; padding-bottom: 250px; margin-bottom: 0rem;">Shop</h1>
     </div>
@@ -47,13 +50,17 @@
                         string name = view.Item_Name;
                         string price = view.Price.ToString();
                         string link = view.Image;
+                        string pk = view.Product_ID;
                         <div class="d-flex flex-column" style="padding:50px 50px;">
+                            <a href="/Shop/@pk">
                             <button style="background: url(@link); 
                                            background-repeat: no-repeat; 
                                            background-position: center;
                                            background-size: cover;
                                            width:400px;
-                                           height:300px;"></button>
+                                           height:300px;"
+                                    onclick="()=> Naviagte(@pk)"></button>
+                            </a>
                             <p style="text-align:center; color:white;font-size: 30px;">@name</p>
                             <p style="text-align:center;color:white;font-size: 30px;">$@price</p>
                         </div>
@@ -148,6 +155,11 @@
         color: white;
     }
 
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
 </style>
 
 @code {
@@ -159,16 +171,6 @@
     protected override async Task OnInitializedAsync()
     {
         isPrerendering = false;
-
-        if (storeButton == null) {
-            throw new InvalidOperationException("ProtectedLocalStorage is not initialized.");
-        }
-
-        // Check if dbAccess is injected properly
-        if (dbAccess == null) {
-            throw new InvalidOperationException("Database access is not initialized.");
-        }
-
 
         getItems = dbAccess.MySQLConnection_Datatable("SELECT * FROM Product");
         foreach (DataRow row in getItems.Rows) {

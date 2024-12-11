@@ -1,4 +1,5 @@
 @page "/Login"
+@using Tavern.Data
 <PageTitle>Login</PageTitle>
 <div class="centering">
     <div class="login-container">
@@ -26,7 +27,7 @@
         background-image: url("/imgs/signup_background2.png");
         background-size: cover;
         background-repeat: no-repeat;
-    
+    }
     html {
         overflow: hidden;
         height: 100%;
@@ -36,7 +37,6 @@
         overflow: auto;
         height: 100%;
         overscroll-behavior: none;
-    }
     }
     .centering {
         padding-left: 500px;
@@ -84,7 +84,7 @@
         border: 1px solid #5c4033;
         border-radius: 5px;
         background-color: #f8f4e9;
-  
+  }
     .login-container button {
         background-color: #333;
         color: white;
@@ -98,8 +98,25 @@
         background-color: #555;
     }
     .login-container .login-link {
-         margin-top: 10px;
+         margin-top:  5px 10px;
         font-size: 14px;
     }
 </style>
 
+
+@code {
+    Database db = new Database();
+    private string Username { get; set; }
+    private string Password { get; set; }
+
+    private 
+
+    void SubmitForm()
+    {
+        Console.WriteLine($"Users: {Username}, Password: {Password}"); // Debugging: Check values
+        string query = "INSERT INTO Login (Username, User_Password) VALUES (@Username, @Password);";
+        Console.WriteLine(query); // Debugging: Print the query
+        db.Add_Entry(query);
+    }
+
+}

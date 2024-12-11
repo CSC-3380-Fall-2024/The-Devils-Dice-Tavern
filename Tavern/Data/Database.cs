@@ -32,10 +32,11 @@ namespace Tavern.Data {
             int records = 0;
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                conn.Open();
-                MySqlCommand selectCommand = new MySqlCommand(query, conn);
+                conn.Open();    
+                using (MySqlCommand selectCommand = new MySqlCommand(query, conn)) {
+                    records = selectCommand.ExecuteNonQuery();
+                }
                 // to insert, update, and delete data.
-                records = selectCommand.ExecuteNonQuery();
                  
                 conn.Close();
             }

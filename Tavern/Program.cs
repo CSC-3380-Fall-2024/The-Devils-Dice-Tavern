@@ -13,6 +13,9 @@ builder.Configuration.AddJsonFile("secrets.json",
         optional: true,
         reloadOnChange: true);
 var app = builder.Build();
+Environment.SetEnvironmentVariable("userLogin", "false");
+Environment.SetEnvironmentVariable("usersName", null);
+Environment.SetEnvironmentVariable("userID", null);
 Environment.SetEnvironmentVariable("ConnectionStr", builder.Configuration.GetSection("MySQL:ConnectionString").Value);
 
 // Configure the HTTP request pipeline.
